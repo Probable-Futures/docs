@@ -11,7 +11,14 @@ Using your access credentials, you can request an access token.
 
 Below are examples of how to call the authorization API to obtain access tokens. The access token will expire in 24hrs. The response is a JWT token of type `Bearer`.
 
-- **Using cUrl**: `curl --request POST \ --url https://probablefutures.us.auth0.com/oauth/token \ --header 'content-type: application/json' \ --data '{"client_id":"","client_secret":"","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}'`
+- **Using cUrl**: 
+
+```
+curl --request POST \
+  --url https://probablefutures.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"","client_secret":"","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}'
+```
 - **Using JS**:
 
   ```
