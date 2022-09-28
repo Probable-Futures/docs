@@ -11,15 +11,15 @@ Using your access credentials, you can request an access token.
 
 Below are examples of how to call the authorization API to obtain access tokens. The access token will expire in 24hrs. The response is a JWT token of type `Bearer`.
 
-- **Using cUrl**: 
+- **Using cURL**: 
 
 ```
 curl --request POST \
   --url https://probablefutures.us.auth0.com/oauth/token \
   --header 'content-type: application/json' \
-  --data '{"client_id":"","client_secret":"","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}'
+  --data '{"client_id":"CLIENT_ID_HERE","client_secret":"CLIENT_SECRET_HERE","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}'
 ```
-- **Using JS**:
+- **Using JavaScript**:
 
   ```
   var request = require("request");
@@ -27,7 +27,7 @@ curl --request POST \
   var options = { method: 'POST',
     url: 'https://probablefutures.us.auth0.com/oauth/token',
     headers: { 'content-type': 'application/json' },
-    body: '{"client_id":"","client_secret":"","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}' };
+    body: '{"client_id":"CLIENT_ID_HERE","client_secret":"CLIENT_SECRET_HERE","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}' };
 
   request(options, function (error, response, body) {
     if (error) throw new Error(error);
@@ -101,13 +101,22 @@ Response example:
   }
   ```
 
-### Applied example
+### Applied examples
+
+Calling the API using cURL:
+```
+curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
+--header 'Authorization: Bearer ACCESS_TOKEN_HERE' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"mutation {\n  getDatasetStatistics(input: {\n        lat: \"40.7\",\n        lon: \"-73.9\",\n        warmingScenario: \"1.5\"\n    }) {\n    datasetStatisticsResponses{\n        datasetId\n        highValue\n        lowValue\n        midValue\n        name\n        unit\n        warmingScenario\n    }\n  }\n}","variables":{}}'
+```
+
 
 Calling the API in JavaScript:
 
   ```
   var headers = new Headers();
-  headers.append("Authorization", "Bearer {Add access token here}");
+  headers.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
   headers.append("Content-Type", "application/json");
 
   var graphql = JSON.stringify({
