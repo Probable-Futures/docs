@@ -46,36 +46,36 @@ The API is a graphql endpoint located at `https://graphql.probablefutures.org/gr
 - **warmingScenario**: specifies the warming scenario, of type string - required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
 - **datasetId**: Id of the dataset requested, of type integer - optional. If omitted the data for all datasets will be returned. Below is a list of dataset IDs and their corresponding names:
 
-```
-  datasetId | name
-  40101     | Average temperature
-  40102     | Average daytime temperature
-  40103     | 10 hottest days
-  40104     | Days above 32°C (90°F)
-  40105     | Days above 35°C (95°F)
-  40106     | Days above 38°C (100°F)
-  40201     | Average nighttime temperature
-  40202     | Frost nights
-  40203     | Nights above 20°C (68°F)
-  40204     | Nights above 25°C (77°F)
-  40205     | Freezing days
-  40301     | Days above 26°C (78°F) wet-bulb
-  40302     | Days above 28°C (82°F) wet-bulb
-  40303     | Days above 30°C (86°F) wet-bulb
-  40304     | Days above 32°C (90°F) wet-bulb
-  40305     | 10 hottest wet-bulb days
-  40601     | Change in total annual precipitation
-  40607     | Change in dry hot days
-  40612     | Change in frequency of historical “1-in-100-year” storm
-  40613     | Change in precipitation of “1-in-100-year” storm
-  40614     | Change in snowy days
-  40616     | Change in wettest 90 days
-  40701     | Likelihood of year-plus extreme drought
-  40702     | Likelihood of year-plus drought
-  40703     | Change in water balance
-  40704     | Change in wildfire danger days
-  40901     | Climate zones
-```
+| datasetId | name                                          |
+|:---------:|-----------------------------------------------|
+|   40101   | Average temperature                           |
+|   40102   | Average daytime temperature                   |
+|   40103   | 10 hottest days                               |
+|   40104   | Days above 32°C (90°F)                        |
+|   40105   | Days above 35°C (95°F)                        |
+|   40106   | Days above 38°C (100°F)                       |
+|   40201   | Average nighttime temperature                 |
+|   40202   | Frost nights                                  |
+|   40203   | Nights above 20°C (68°F)                      |
+|   40204   | Nights above 25°C (77°F)                      |
+|   40205   | Freezing days                                 |
+|   40301   | Days above 26°C (78°F) wet-bulb               |
+|   40302   | Days above 28°C (82°F) wet-bulb               |
+|   40303   | Days above 30°C (86°F) wet-bulb               |
+|   40304   | Days above 32°C (90°F) wet-bulb               |
+|   40305   | 10 hottest wet-bulb days                      |
+|   40601   | Change in total annual precipitation          |
+|   40607   | Change in dry hot days                        |
+|   40612   | Change in frequency of "1-in-100 year" storm  |
+|   40613   | Change in precipitation "1-in-100 year" storm |
+|   40614   | Change in snowy days                          |
+|   40616   | Change in wettest 90 days                     |
+|   40701   | Likelihood of year-plus extreme drought       |
+|   40702   | Likelihood of year-plus drought               |
+|   40703   | Change in water balance                       |
+|   40704   | Change in wildfire danger days                |
+|   40901   | Climate zones                                 |
+
 ### Responses
 
 The response of the API includes a list of objects that has the following properties:
