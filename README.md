@@ -1,6 +1,13 @@
 # Probable Futures API Documentation
 
 ## Background
+
+Probable Futures aims to increase our chances that the future is good. It is an unconventional initiative that brings together leaders across culture, business, technology, and design, in collaboration with scientists at Woodwell Climate Research Center. 
+
+We offer tools to visualize climate change along with stories and insights to help people understand what those changes mean.
+
+## About the data
+
 Climate describes conditions that occur over seasons and years. Therefore, climate can be described in probabilistic terms: Many places near the equator are very likely to have daytime temperatures reach at least 32°C (90°F) for three months every year. Other places are very unlikely to have so many months with such daytime temperatures. Similarly, the same place near the equator may be very unlikely to have any nights reach freezing temperatures, but it still may happen from time to time. You will encounter values representing these probabilities in the API.
 
 As the global climate changes, the range of probabilities for heat, precipitation, and dryness change as well. The Probable Futures data available in this API offer insight into this range of probable conditions by sending queries for six warming scenarios. More warming scenarios may be added in the future. 
