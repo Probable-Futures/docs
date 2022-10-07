@@ -7,7 +7,7 @@ parent: API
 
 # Calling the API
 
-The API is a graphql endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
+The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
 - **lon**: shorthand for longitude, of type string - required. Valid longitudes should be between -180 and 180.
 - **lat**: shorthand for latitude, of type string - required. Valid latitudes should be between -90 and 90.
