@@ -6,7 +6,7 @@ nav_order: 2
 
 # About the data
 
-This documentation describes how to interact with climate model data.
+Probable Futures data are climate model data.
 
 Climate models can be a useful tool for real-world decision-making. Before using them in this way, however, it is important to understand how scientists make the models, how they are meant to be used, and their strengths and weaknesses. This section covers these topics and will empower you to use data produced by climate models in an informed and risk-aware manner.
 
