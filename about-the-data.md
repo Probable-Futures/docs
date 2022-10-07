@@ -6,12 +6,21 @@ nav_order: 2
 
 # About the data
 
-Climate describes conditions that occur over seasons and years. Therefore, climate can be described in probabilistic terms: Many places near the equator are very likely to have daytime temperatures reach at least 32°C (90°F) for three months every year. Other places are very unlikely to have so many months with such daytime temperatures. Similarly, the same place near the equator may be very unlikely to have any nights reach freezing temperatures, but it still may happen from time to time. You will encounter values representing these probabilities in the API.
+This documentation describes how to interact with climate model data.
 
-As the global climate changes, the range of probabilities for heat, precipitation, and dryness change as well. The Probable Futures data available in this API offer insight into this range of probable conditions by sending queries for six warming scenarios. More warming scenarios may be added in the future.
+Climate models can be a useful tool for real-world decision-making. Before using them in this way, however, it is important to understand how scientists make the models, how they are meant to be used, and their strengths and weaknesses. This section covers these topics and will empower you to use data produced by climate models in an informed and risk-aware manner.
 
-Warming scenarios are typically measured and referred to in Celsius such as 1°C, 1.5°C, and 2°C of global average temperature rise since pre-industrial times. These small-sounding numbers appear incremental but represent substantially different climates. Every increase in global temperature has implications for local and regional weather, natural systems, and society. So how can we prepare for the climate futures that are likely, and avoid the ones that carry the most profound risks for our world?
+## What do climate models do?
+Scientists created climate models to better understand how the climate would change in response to changes in the composition of the atmosphere. At their most basic level, these models are based on fundamental laws of physics, simulate proven physical dynamics that govern atmospheric behavior, and reproduce patterns in observed data. Climate models simulate properties and processes across the full Earth system, including land, glaciers, forests, oceans, and the atmosphere.
 
-Before creating anything with this API, we recommend reading all four volumes on ProbableFutures.org: Heat, Water, Land, and Onward. The interactive maps, science, historical context, and stories are essential context for creating applications using Probable Futures data.
+## What is the difference between climate and weather?
+The climate is a set of conditions that hold over seasons and years, while weather is made up of short-term atmospheric outcomes that can change within a day. Climate is expressed in ranges and averages, while weather is a precise phenomenon at a specific time in a specific place. Climate models thus offer helpful information about the trajectory and magnitude of climate outcomes for given changes in the atmosphere, but they are not meant to make precise predictions.
 
-Examples of how the data in this API can be visualized can be seen in the public maps application located at [probablefutures.org/maps](probablefutures.org/maps).
+## Warming scenarios
+As the global climate changes, the range and averages for heat, precipitation, and dryness change as well. The data described here offer insight into this range of probable conditions by making queries available for six warming scenarios and all Probable Futures maps. More warming scenarios may be added in the future.
+
+Warming scenarios are typically measured and referred to in increments of global average temperature rise since pre-industrial times such as 1°C, 1.5°C, and 2°C. These small-sounding numbers appear incremental but represent substantially different climates. Every increase in global temperature has implications for local and regional weather, natural systems, and society.
+
+Before creating anything with Probable Futures data or maps, we strongly recommend reading all four volumes on [probablefutures.org](probablefutures.org/): Heat, Water, Land, and Onward. These four volumes are essential context for creating applications using Probable Futures data.
+
+Examples of how the data can be visualized as maps may be seen in the public maps application located at [probablefutures.org/maps](probablefutures.org/maps).
