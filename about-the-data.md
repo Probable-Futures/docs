@@ -30,22 +30,22 @@ Celsius is typically used as the unit for warming scenarios. Changes in global a
 ## When are warming scenarios?
 It is common to wonder when warming scenarios have occurred in the past or will occur in the future.
 
-#### 0.5°C
+### 0.5°C warming scenario
 The average surface temperature between 1971 and 2000 was approximately 0.5°C above that of 1850-1900.
 
-#### 1.0°C
+### 1.0°C warming scenario
 In 2017 the average surface temperature passed 1.0°C above the 1850-1900 average. Humans have only experienced higher temperatures during a brief period 120,000 years ago. Major biotic changes, including release of greenhouse gases from thawing permafrost, forest fires, and collapse of Arctic sea ice, have begun contributing to further warming.
 
-#### 1.5°C
+### 1.5°C warming scenario
 Reaching 1.5°C is likely by 2030, and the probability of stopping warming below 1.5°C is approaching zero. Standards and expectations based on the past are rapidly becoming outdated. Heat, drought, deluge, and other stresses will increase, and large-scale biotic feedbacks are likely to intensify.
 
-#### 2.0°C
+### 2.0°C warming scenario
 The probability of staying below 2.0°C of warming is falling quickly. On the current path of emissions, 2.0°C will likely be passed in the 2040s. However, rapid, dramatic action to get to zero emissions can substantially lengthen the time before reaching 2.0°C, giving society and nature more time to adapt, prepare, and innovate.
 
-#### 2.5°C
+### 2.5°C warming scenario
 Rapid, dramatic action to get to zero emissions can substantially reduce the probability of reaching 2.5°C. On the current path, 2.5°C will likely be passed in the 2050s. The earth was last this warm nearly 3 million years ago, when there were no land-based ice sheets other than on Antarctica and Greenland. Stabilizing temperatures at 2.5°C would likely require humans to perpetually offset biotic sources of warming.
 
-#### 3.0°C
+### 3.0°C warming scenario
 If we act rapidly to get to zero emissions and find ways to increase carbon stores, we can make reaching 3.0°C a low probability. On the current path of emissions, 3.0°C will likely be passed in the 2060s. At 3.0°C, most regions of the Earth would have entered a different climate, causing severe biological disruptions. The climate is extremely unlikely to be stable at this temperature.
 
 ## Examples of applications of the data
