@@ -9,7 +9,7 @@ parent: API
 
 The API returns `lowValue`, `midValue`, and `highValue` for each location and warming scenario queried. These represent the range of outcomes that could occur in any given year for the specified location in the specified warming scenario.
 
-In some places, ranges are wider in our current warming scenario. For those of us who live in places that can be both very hot and very cold, we know this well. We must own different types of clothing such as short-sleeved shirts and pants for summer and big coats for winter. In other places, ranges are narrower in our current warming scenario. In places with narrower ranges, people don't need to own so many different types of clothing.
+In some places, ranges are wider. For those of us who live in places that can be both very hot and very cold, we know this well. We must own different types of clothing for summer and winter. In other places, ranges are narrower. In places with narrower ranges, people don't need so many different types of clothing. 
 
 As the climate changes, these ranges change in every place. The range of values in the API offer an opportunity to prepare for ranges of outcomes that are manageable and to seek changes that can help us avoid ranges in warming scenarios that are unmanageable.
 
