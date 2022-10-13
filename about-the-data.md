@@ -28,15 +28,15 @@ Warming scenarios are typically measured and referred to in increments of global
 Celsius is typically used as the unit for warming scenarios. Changes in global average temperature of even 0.5°C represent substantially different climates so common increments of warming scenarios include 1°C, 1.5°C, and 2°C. The Probable Futures warming scenarios include 0.5°C, 1°C, 1.5°C, 2°C, 2.5°C, and 3°C. These small-sounding numbers may appear incremental but every increase in global temperature has implications for local and regional weather, natural systems, and society.
 
 ## When are warming scenarios?
-It is common to wonder when warming scenarios have occurred in the past or will occur in the future. Although it is not possible to assign specific dates to specific warming scenarios without making assumptions about other factors such as the amount of warming gases that humans will add to the atmosphere in the future, it is possible to predict a range of years when certain warming scenarios may be reached given current rates of emissions. It is also possible to identify when past warming scenarios occurred.
+It is common to wonder when warming scenarios have occurred in the past or will occur in the future. Although it is not possible to assign specific dates to specific warming scenarios without making assumptions about other factors such as the amount of warming gasses that humans will add to the atmosphere in the future, it is possible to predict a range of years when certain warming scenarios may be reached given current rates of emissions. It is also possible to identify when past warming scenarios occurred.
 
-The following sentences describe when warming scenarios have happened in the past and the range of years when future warming scenarios may be reached in the future. 
+The following sentences describe when warming scenarios have happened in the past and the range of years when future warming scenarios may be reached in the future.
 
 ### 0.5°C warming scenario
 The average surface temperature between 1971 and 2000 was approximately 0.5°C above that of 1850-1900.
 
 ### 1.0°C warming scenario
-In 2017 the average surface temperature passed 1.0°C above the 1850-1900 average. Humans have only experienced higher temperatures during a brief period 120,000 years ago. Major biotic changes, including release of greenhouse gases from thawing permafrost, forest fires, and collapse of Arctic sea ice, have begun contributing to further warming.
+In 2017 the average surface temperature passed 1.0°C above the 1850-1900 average. Humans have only experienced higher temperatures during a brief period 120,000 years ago. Major biotic changes, including release of greenhouse gasses from thawing permafrost, forest fires, and collapse of Arctic sea ice, have begun contributing to further warming.
 
 ### 1.5°C warming scenario
 Reaching 1.5°C is likely by 2030, and the probability of stopping warming below 1.5°C is approaching zero. Standards and expectations based on the past are rapidly becoming outdated. Heat, drought, deluge, and other stresses will increase, and large-scale biotic feedbacks are likely to intensify.
