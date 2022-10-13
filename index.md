@@ -2,9 +2,11 @@
 layout: default
 title: Home
 nav_order: 1
+last_modified_date: true
 ---
 
-# Probable Futures Developer Documentation
+# Probable Futures Developer Resources
+Welcome! If you are here, you are among the first to see this documentation and the resources described in it. We are in the process of actively adding more documentation and making more resources available here. In the future, we plan to add more ways to access the data and maps that will be accessible for more use-cases. For now, a minimum viable version of an API is available and documented.
 
 ## Background
 
