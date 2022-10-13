@@ -7,11 +7,11 @@ parent: API
 
 # How to interpret low, mid, and high values
 
-The API returns `lowValue`, `midValue`, and `highValue` for each location and warming scenario queried. These represent the range of outcomes that could occur in any given year for the specified location in the specified warming scenario.
+The API returns `lowValue`, `midValue`, and `highValue` for each location and warming scenario queried. You can think of these values as a range. People must be prepared for the full range in the same way we all must be prepared for a range of weather. In other words, this range can be thought of as potential outcomes in any given year in the specified warming scenario for the specified location.
 
-In some places, ranges are wider. For those of us who live in places that can be both very hot and very cold, we know this well. We must own different types of clothing for summer and winter. In other places, ranges are narrower. In places with narrower ranges, people don't need so many different types of clothing. 
+In some places, the ranges of potential outcomes are wider. For those of us who live in places that can be both very hot and very cold, we know this well. We must own different types of clothing for summer and winter. In other places, ranges are narrower. In places with narrower ranges, people don't need so many different types of clothing.
 
-As the climate changes, these ranges change in every place. The range of values in the API offer an opportunity to prepare for ranges of outcomes that are manageable and to seek changes that can help us avoid ranges in warming scenarios that are unmanageable.
+As the climate changes, these ranges change in every place. The range of values in the API offer an opportunity to prepare for ranges of outcomes that are manageable and to seek changes in human actions that can help avoid ranges in warming scenarios that are unmanageable.
 
 The low and high values are not the lowest or highest possible values that could occur in the specified location at a specified warming scenario. In other words, the range goes beyond these low and high points.
 
