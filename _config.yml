@@ -8,6 +8,8 @@ url: "https://probable-futures.github.io" # the base hostname & protocol for you
 
 permalink: pretty
 
+# color_scheme: dark
+
 exclude:
  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
    - .sass-cache/
