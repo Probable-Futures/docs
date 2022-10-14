@@ -6,7 +6,7 @@ parent: API
 ---
 
 # API access
-To access the API, you will need credentials. Someone on the Probable Futures team will share these with you in a secure way that works for your team.
+To access the API, you will need credentials. Someone on the Probable Futures team will share these with you in a secure way that works for your team. We expect you to store these credentials in a secure location appropriate for storing secrets such as a password manager. 
 
 - ID
 - Secret
