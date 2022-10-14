@@ -8,8 +8,8 @@ url: "https://probable-futures.github.io" # the base hostname & protocol for you
 
 permalink: pretty
 
-# color_scheme: dark
-color_scheme: probable-futures-light
+color_scheme: dark
+# color_scheme: probable-futures-light
 
 
 exclude:
