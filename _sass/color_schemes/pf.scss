@@ -1,26 +1,26 @@
-$brand-white: #FEFFFC !default;
-$brand-off-white: #F8F9F3 !default;
-$brand-cream: #ECF0E0 !default;
+$brand-white: #FEFFFC;
+$brand-off-white: #F8F9F3;
+$brand-cream: #ECF0E0;
 
-$brand-purple: #851FFF !default;
-$brand-purple-dark: #2A172D !default;
+$brand-purple: #851FFF;
+$brand-purple-dark: #2A172D;
 
-$purple-000: $brand-purple !default;
-$purple-100: #663b6e !default;
-$purple-200: #45274a !default;
-$purple-300: $brand-purple-dark !default;
+$purple-000: $brand-purple;
+$purple-100: #663b6e;
+$purple-200: #45274a;
+$purple-300: $brand-purple-dark;
 
 
-$body-background-color: $brand-white !default;
-$sidebar-color: $brand-off-white !default;
-$search-background-color: $brand-white !default;
-$table-background-color: $brand-white !default;
-$code-background-color: $grey-lt-000 !default;
-$feedback-color: darken($sidebar-color, 3%) !default;
-$body-text-color: $grey-dk-100 !default;
-$body-heading-color: $grey-dk-300 !default;
-$search-result-preview-color: $grey-dk-000 !default;
-$nav-child-link-color: $grey-dk-100 !default;
-$link-color: $purple-000 !default;
-$btn-primary-color: $purple-100 !default;
-$base-button-color: #f7f7f7 !default;
+$body-background-color: $brand-white;
+$sidebar-color: $brand-off-white;
+$search-background-color: $brand-white;
+$table-background-color: $brand-white;
+$code-background-color: $grey-lt-000;
+$feedback-color: darken($sidebar-color, 3%);
+$body-text-color: $grey-dk-100;
+$body-heading-color: $grey-dk-300;
+$search-result-preview-color: $grey-dk-000;
+$nav-child-link-color: $grey-dk-100;
+$link-color: $purple-000;
+$btn-primary-color: $purple-100;
+$base-button-color: #f7f7f7;
