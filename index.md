@@ -5,7 +5,7 @@ nav_order: 1
 ---
 
 # Probable Futures Developer Resources
-Welcome! If you are here, you are among the first to see this documentation and the resources described in it. We are actively adding to it and making more resources available. For now, a minimum viable version of an API is available and documented.
+Welcome! If you are here, you are among the first to see this documentation and the resources described in it. We are actively adding to it and making more resources available. For now, a minimal version of an API is available and documented.
 
 ## Background
 
