@@ -12,8 +12,8 @@ The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/gr
 - **lon**: shorthand for longitude, of type string - optional. Valid longitudes should be between -180 and 180.
 - **lat**: shorthand for latitude, of type string - optional. Valid latitudes should be between -90 and 90.
 - **country**: generally recognized countries or country codes - optional. Example "France" or "fr". Can be sent alone or with city or/and address.
-- **city**: this includes cities, villages, municipalities.. - Optional. Should be sent along with a country and/or address.
-- **address**: Postal addresses, individual residential or business addresses - Optional. Can be sent alone or with city or/and country.
+- **city**: this includes cities, villages, municipalities.. - optional. Should be sent along with a country and/or address.
+- **address**: Postal addresses, individual residential or business addresses - optional. Can be sent alone or with city or/and country.
 - **warmingScenario**: specifies the warming scenario, of type string - required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
 - **datasetId**: Id of the dataset requested, of type integer - optional. If omitted the data for all datasets will be returned. Below is a list of dataset IDs and their corresponding names:
 
