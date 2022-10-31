@@ -61,7 +61,7 @@ The response of the API includes a list of objects that has the following proper
 - longitude
 - latitude
 
-Some or all fields can be selected to be returned in the response.
+Some or all the fields can be selected to be part of the response.
 
 Response example:
   ```
