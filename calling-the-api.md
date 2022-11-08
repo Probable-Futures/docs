@@ -9,16 +9,16 @@ parent: API
 
 The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
-- **lon**: shorthand for longitude, of type string - optional. Valid longitudes should be between -180 and 180.
-- **lat**: shorthand for latitude, of type string - optional. Valid latitudes should be between -90 and 90.
-- **country**: generally recognized countries or country codes - optional. Example "France" or "fr". Can be sent alone or with city or/and address.
-- **city**: this includes cities, villages, municipalities.. - optional. Should be sent along with a country and/or address.
-- **address**: Postal addresses, individual residential or business addresses - optional. Can be sent alone or with city or/and country.
-- **warmingScenario**: specifies the warming scenario, of type string - required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
-- **datasetId**: Id of the dataset requested, of type integer - optional. If omitted the data for all datasets will be returned. Below is a list of dataset IDs and their corresponding names:
+-   **lon**: shorthand for longitude, of type string - optional. Valid longitudes should be between -180 and 180.
+-   **lat**: shorthand for latitude, of type string - optional. Valid latitudes should be between -90 and 90.
+-   **country**: generally recognized countries or country codes - optional. Example "France" or "fr". Can be sent alone or with city or/and address.
+-   **city**: this includes cities, villages, municipalities.. - optional. Should be sent along with a country and/or address.
+-   **address**: Postal addresses, individual residential or business addresses - optional. Can be sent alone or with city or/and country.
+-   **warmingScenario**: specifies the warming scenario, of type string - required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
+-   **datasetId**: Id of the dataset requested, of type integer - optional. If omitted the data for all datasets will be returned. Below is a list of dataset IDs and their corresponding names:
 
 | datasetId | name                                          |
-|:---------:|-----------------------------------------------|
+| :-------: | --------------------------------------------- |
 |   40101   | Average temperature                           |
 |   40102   | Average daytime temperature                   |
 |   40103   | 10 hottest days                               |
@@ -51,34 +51,36 @@ The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/gr
 
 The response of the API includes a list of objects that has the following properties:
 
-- datasetId
-- highValue
-- lowValue
-- midValue
-- name
-- unit
-- warmingScenario
-- longitude
-- latitude
+-   datasetId
+-   highValue
+-   lowValue
+-   midValue
+-   name
+-   unit
+-   warmingScenario
+-   longitude
+-   latitude
 
 Some or all the fields can be selected to be part of the response.
 
 Response example:
-  ```
-  {
-    "datasetId": 40104,
-    "highValue": "28.0",
-    "lowValue": "6.0",
-    "midValue": "17.0",
-    "name": "Days above 32°C (90°F)",
-    "unit": "days",
-    "warmingScenario": "1.0"
-  }
-  ```
+
+```
+{
+  "datasetId": 40104,
+  "highValue": "28.0",
+  "lowValue": "6.0",
+  "midValue": "17.0",
+  "name": "Days above 32°C (90°F)",
+  "unit": "days",
+  "warmingScenario": "1.0"
+}
+```
 
 ### Applied examples
 
-Calling the API using cURL:
+Calling the API using cURL with lon and lat:
+
 ```
 curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
 --header 'Authorization: Bearer ACCESS_TOKEN_HERE' \
@@ -86,27 +88,59 @@ curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
 --data-raw '{"query":"mutation {\n  getDatasetStatistics(input: {\n        lat: \"40.7\",\n        lon: \"-73.9\",\n        warmingScenario: \"1.5\"\n    }) {\n    datasetStatisticsResponses{\n        datasetId\n        highValue\n        lowValue\n        midValue\n        name\n        unit\n        warmingScenario\n    }\n  }\n}","variables":{}}'
 ```
 
+Calling the API in JavaScript with lon and lat:
 
-Calling the API in JavaScript:
+```
+var headers = new Headers();
+headers.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
+headers.append("Content-Type", "application/json");
 
-  ```
-  var headers = new Headers();
-  headers.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
-  headers.append("Content-Type", "application/json");
+var graphql = JSON.stringify({
+  query: "mutation {\n      getDatasetStatistics(\n        input: {lon: \"-73.9\", lat: \"40.7\", warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
+    variables: {}
+});
+var requestOptions = {
+  method: 'POST',
+  headers: headers,
+  body: graphql,
+  redirect: 'follow'
+};
 
-  var graphql = JSON.stringify({
-    query: "mutation {\n      getDatasetStatistics(\n        input: {lon: \"-73.9\", lat: \"40.7\", warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
-      variables: {}
-  });
-  var requestOptions = {
-    method: 'POST',
-    headers: headers,
-    body: graphql,
-    redirect: 'follow'
-  };
+fetch("https://graphql.probablefutures.org/graphql", requestOptions)
+.then(response => response.text())
+.then(result => console.log(result))
+.catch(error => console.log('error', error));
+```
 
-  fetch("https://graphql.probablefutures.org/graphql", requestOptions)
+Calling the API using cURL with address and country:
+
+```
+curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
+--header 'Authorization: Bearer {ACCESS_TOKEN_HERE}' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"mutation {\n      getDatasetStatistics(\n        input: {country: \"us\", address: \"121 East 48th Street, Apt. 123, New York, NY 10001\", warmingScenario: \"1.5\", datasetId: null}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n          longitude\n          latitude\n      }\n    }\n}","variables":{}}'
+```
+
+Calling the API in JavaScript with address and country:
+
+```
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
+myHeaders.append("Content-Type", "application/json");
+
+var graphql = JSON.stringify({
+  query: "mutation {\n      getDatasetStatistics(\n        input: {country: \"us\", address: \"121 East 48th Street, Apt. 123, New York, NY 10001\", warmingScenario: \"1.5\", datasetId: null}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n          longitude\n          latitude\n      }\n    }\n}",
+  variables: {}
+})
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: graphql,
+  redirect: 'follow'
+};
+
+fetch("https://graphql.probablefutures.org/graphql", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
-  ```
+```
