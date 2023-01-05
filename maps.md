@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Maps
-nav_order: 4
+nav_order: 3
 has_children: false
 ---
 
@@ -51,7 +51,7 @@ Our process for creating maps involves considering particular phenomena and thre
 The tileset IDs above can be used to create maps in your own application. To learn more about Mapbox tilesets, please see [Mapbox's Mapbox Tiling Service page](https://www.mapbox.com/mts).
 
 ## Tileset feature attributes
-Tileset feature attributes represent data in a Mapbox Tiling Service map. Probable Futures maps use feature attributes to represent a range of three expected values for each warming scenario, resulting in a total of 18 values per grid cell. These values can be seen by inspecting a tileset in Mapbox studio. To expose them in an application for users, they can be queried and displayed in a pop-up on a map as you can see by clicking on any square with data on any map on probablefutures.org/maps. 
+Tileset feature attributes represent data in a Mapbox Tiling Service map. Probable Futures maps use feature attributes to represent a range of three expected values for each warming scenario, resulting in a total of 18 values per grid cell. These values can be seen by inspecting a tileset in Mapbox studio. To expose them in an application for users, they can be queried and displayed in a pop-up on a map as you can see by clicking on any square with data on any map on probablefutures.org/maps.
 
 | Warming scenario | Tileset feature name |
 |------------------|----------------------|
