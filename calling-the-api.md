@@ -9,43 +9,13 @@ parent: API
 
 The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
--   **lon**: shorthand for longitude, of type string - optional. Valid longitudes should be between -180 and 180.
--   **lat**: shorthand for latitude, of type string - optional. Valid latitudes should be between -90 and 90.
--   **country**: generally recognized countries or country codes - optional. Example "France" or "fr". Can be sent alone or with city or/and address.
--   **city**: this includes cities, villages, municipalities.. - optional. Should be sent along with a country and/or address.
--   **address**: Postal addresses, individual residential or business addresses - optional. Can be sent alone or with city or/and country.
--   **warmingScenario**: specifies the warming scenario, of type string - required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
--   **datasetId**: Id of the dataset requested, of type integer - optional. If omitted the data for all datasets will be returned. Below is a list of dataset IDs and their corresponding names:
-
-| datasetId | name                                          |
-| :-------: | --------------------------------------------- |
-|   40101   | Average temperature                           |
-|   40102   | Average daytime temperature                   |
-|   40103   | 10 hottest days                               |
-|   40104   | Days above 32°C (90°F)                        |
-|   40105   | Days above 35°C (95°F)                        |
-|   40106   | Days above 38°C (100°F)                       |
-|   40201   | Average nighttime temperature                 |
-|   40202   | Frost nights                                  |
-|   40203   | Nights above 20°C (68°F)                      |
-|   40204   | Nights above 25°C (77°F)                      |
-|   40205   | Freezing days                                 |
-|   40301   | Days above 26°C (78°F) wet-bulb               |
-|   40302   | Days above 28°C (82°F) wet-bulb               |
-|   40303   | Days above 30°C (86°F) wet-bulb               |
-|   40304   | Days above 32°C (90°F) wet-bulb               |
-|   40305   | 10 hottest wet-bulb days                      |
-|   40601   | Change in total annual precipitation          |
-|   40607   | Change in dry hot days                        |
-|   40612   | Change in frequency of "1-in-100 year" storm  |
-|   40613   | Change in precipitation "1-in-100 year" storm |
-|   40614   | Change in snowy days                          |
-|   40616   | Change in wettest 90 days                     |
-|   40701   | Likelihood of year-plus extreme drought       |
-|   40702   | Likelihood of year-plus drought               |
-|   40703   | Change in water balance                       |
-|   40704   | Change in wildfire danger days                |
-|   40901   | Climate zones                                 |
+-   `lon`: Shorthand for longitude, of type string, optional. Valid longitudes should be between -180 and 180.
+-   `lat`: Shorthand for latitude, of type string, optional. Valid latitudes should be between -90 and 90.
+-   `country`: Generally recognized countries or country codes, of type string, optional. Example "France" or "fr". Can be sent alone or with city and/or address.
+-   `city`: Cities, villages, municipalities, of type string, optional. Should be sent with a country and/or address.
+-   `address`: Postal addresses, individual residential or business addresses, of type string, optional. Can be sent alone or with city and/or country.
+-   `warmingScenario`: Specifies the warming scenario, of type string, required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
+-   `datasetId`: ID of the dataset requested, of type integer, optional. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](/maps) page.
 
 ### Responses
 
