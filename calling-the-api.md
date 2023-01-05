@@ -112,6 +112,20 @@ fetch("https://graphql.probablefutures.org/graphql", requestOptions)
 .catch(error => console.log('error', error));
 ```
 
+Calling the API in Python with lon and lat:
+
+```
+headers = {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer " + ACCESS_TOKEN_HERE
+}
+query = {
+    "query": "mutation {\n      getDatasetStatistics(\n        input: {lon: \"-73.9\", lat: \"40.7\", warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
+    "variables": {}
+}
+response = requests.post('https://graphql.probablefutures.org/graphql', headers=headers, json=query)
+```
+
 Calling the API using cURL with address and country:
 
 ```
@@ -143,4 +157,18 @@ fetch("https://graphql.probablefutures.org/graphql", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
+```
+
+Calling the API in Python with address and country:
+
+```
+headers = {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer " + ACCESS_TOKEN_HERE
+}
+query = {
+    "query": "mutation {\n      getDatasetStatistics(\n        input: {country: \"us\", address: \"121 East 48th Street, Apt. 123, New York, NY 10001\", warmingScenario: \"1.5\", datasetId: null}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n          longitude\n          latitude\n      }\n    }\n}",
+    "variables": {}
+}
+response = requests.post('https://graphql.probablefutures.org/graphql', headers=headers, json=query)
 ```
