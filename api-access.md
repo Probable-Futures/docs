@@ -26,18 +26,27 @@ curl --request POST \
 ```
 - **Using JavaScript**:
 
-  ```
-  var request = require("request");
+```
+var request = require("request");
 
-  var options = { method: 'POST',
-    url: 'https://probablefutures.us.auth0.com/oauth/token',
-    headers: { 'content-type': 'application/json' },
-    body: '{"client_id":"CLIENT_ID_HERE","client_secret":"CLIENT_SECRET_HERE","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}' };
+var options = { method: 'POST',
+url: 'https://probablefutures.us.auth0.com/oauth/token',
+headers: { 'content-type': 'application/json' },
+body: '{"client_id":"CLIENT_ID_HERE","client_secret":"CLIENT_SECRET_HERE","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}' };
 
-  request(options, function (error, response, body) {
-    if (error) throw new Error(error);
-    console.log(body);
-  });
-  ```
+request(options, function (error, response, body) {
+if (error) throw new Error(error);
+console.log(body);
+});
+```
+
+- **Using Python**:
+
+```
+import requests
+response = requests.post('https://probablefutures.us.auth0.com/oauth/token',
+	json={"client_id": "CLIENT_ID_HERE", "client_secret": "CLIENT_SECRET_HERE", "audience": "https://graphql.probablefutures.com", "grant_type": "client_credentials"})
+access_token = response.json()['access_token']
+```
 
   **Note:** Make sure to set the correct client credentials before using the API.
