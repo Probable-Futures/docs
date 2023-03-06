@@ -9,76 +9,47 @@ has_children: false
 The Probable Futures maps are climate model data displayed as Mapbox tilesets. To learn more about climate models and the specific models Probable Futures uses, please see [About the data](https://probable-futures.github.io/docs/about-the-data/) and [the science page](https://probablefutures.org/science/) on probablefutures.org.
 
 ## All maps
-Below is a list of all maps currently published on probablefutures.org/maps.
+Below is a list of all maps currently published on [probablefutures.org/maps](). To see this list in a spreadsheet with additional metadata such as map units, tileset IDs, climate model information, and technical descriptions, please see the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=254758432).
 
-|   ID  |                    Map name                   |        Category       |          Unit          |
-|:-----:|:---------------------------------------------:|:---------------------:|:----------------------:|
-| 40101 | Average temperature                           | Increasing heat       | Quantity (°C)          |
-| 40102 | Average daytime temperature                   | Increasing heat       | Quantity (°C)          |
-| 40103 | 10 hottest days                               | Increasing heat       | Quantity (°C)          |
-| 40104 | Days above 32°C (90°F)                        | Increasing heat       | Count (days)           |
-| 40105 | Days above 35°C (95°F)                        | Increasing heat       | Count (days)           |
-| 40106 | Days above 38°C (100°F)                       | Increasing heat       | Count (days)           |
-| 40201 | Average nighttime temperature                 | Decreasing cold       | Quantity (°C)          |
-| 40202 | Frost nights                                  | Decreasing cold       | Count (days)           |
-| 40203 | Nights above 20°C (68°F)                      | Decreasing cold       | Count (days)           |
-| 40204 | Nights above 25°C (77°F)                      | Decreasing cold       | Count (days)           |
-| 40205 | Freezing days                                 | Decreasing cold       | Count (days)           |
-| 40301 | Days above 26°C (78°F) wet-bulb               | Heat and humidity     | Count (days)           |
-| 40302 | Days above 28°C (82°F) wet-bulb               | Heat and humidity     | Count (days)           |
-| 40303 | Days above 30°C (86°F) wet-bulb               | Heat and humidity     | Count (days)           |
-| 40304 | Days above 32°C (90°F) wet-bulb               | Heat and humidity     | Count (days)           |
-| 40305 | 10 hottest wet-bulb days                      | Heat and humidity     | Quantity (°C)          |
-| 40601 | Change in total annual precipitation          | Maps of precipitation | Quantity (mm)          |
-| 40607 | Change in dry hot days                        | Maps of precipitation | Count (days)           |
-| 40612 | Change in frequency of "1-in-100 year" storm  | Maps of precipitation | Return period (1-in-X) |
-| 40613 | Change in precipitation "1-in-100 year" storm | Maps of precipitation | Quantity (mm)          |
-| 40614 | Change in snowy days                          | Maps of precipitation | Count (days)           |
-| 40616 | Change in wettest 90 days                     | Maps of precipitation | Quantity (mm)          |
-| 40701 | Likelihood of year-plus extreme drought       | Maps of dryness       | %                      |
-| 40702 | Likelihood of year-plus drought               | Maps of dryness       | %                      |
-| 40703 | Change in water balance                       | Maps of dryness       | z-score                |
-| 40704 | Change in wildfire danger days                | Maps of dryness       | days                   |
-| 40901 | Climate zones                                 | Other                 | class                  |
-
+| Map name                                         | ID    | Category          |
+|--------------------------------------------------|-------|-------------------|
+| [Days above 32°C (90°F)](https://probablefutures.org/maps/?selected_map=days_above_32c&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                            | 40104 | Increasing heat   |
+| [Days above 35°C (95°F)](https://probablefutures.org/maps/?selected_map=days_above_35c&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                            | 40105 | Increasing heat   |
+| [Days above 38°C (100°F)](https://probablefutures.org/maps/?selected_map=days_above_38c&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                           | 40106 | Increasing heat   |
+| [Average temperature](https://probablefutures.org/maps/?selected_map=average_temperature&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                          | 40101 | Increasing heat   |
+| [Average daytime temperature](https://probablefutures.org/maps/?selected_map=average_daytime_temperature&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                          | 40102 | Increasing heat   |
+| [10 hottest days](https://probablefutures.org/maps/?selected_map=10_hottest_days&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                                  | 40103 | Increasing heat   |
+| [Freezing days](https://probablefutures.org/maps/?selected_map=freezing_days&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                                      | 40205 | Decreasing cold   |
+| [Frost nights](https://probablefutures.org/maps/?selected_map=frost_nights&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                                        | 40202 | Decreasing cold   |
+| [Nights above 20°C (68°F)](https://probablefutures.org/maps/?selected_map=nights_above_20c&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                        | 40203 | Decreasing cold   |
+| [Nights above 25°C (77°F)](https://probablefutures.org/maps/?selected_map=nights_above_25c&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                        | 40204 | Decreasing cold   |
+| [Average nighttime temperature](https://probablefutures.org/maps/?selected_map=average_nighttime_temperature&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                      | 40201 | Decreasing cold   |
+| [Days above 26°C (78°F) wet-bulb](https://probablefutures.org/maps/?selected_map=days_above_26c_wet-bulb&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                          | 40301 | Heat and humidity |
+| [Days above 28°C (82°F) wet-bulb](https://probablefutures.org/maps/?selected_map=days_above_28c_wet-bulb&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                          | 40302 | Heat and humidity |
+| [Days above 30°C (86°F) wet-bulb](https://probablefutures.org/maps/?selected_map=days_above_30c_wet-bulb&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                          | 40303 | Heat and humidity |
+| [Days above 32°C (90°F) wet-bulb](https://probablefutures.org/maps/?selected_map=days_above_32c_wet-bulb&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                          | 40304 | Heat and humidity |
+| [10 hottest wet-bulb days](https://probablefutures.org/maps/?selected_map=10_hottest_wet-bulb_days&map_version=latest&volume=heat&warming_scenario=1#2.2/0/0)                                                | 40305 | Heat and humidity |
+| [Change in total annual precipitation](https://probablefutures.org/maps/?selected_map=change_in_total_annual_precipitation&map_version=latest&volume=water&warming_scenario=1#2.2/0/0)                       | 40601 | Precipitation     |
+| [Change in snowy days](https://probablefutures.org/maps/?selected_map=change_in_snowy_days&map_version=latest&volume=water&warming_scenario=1#2.2/0/0)                                                       | 40614 | Precipitation     |
+| [Change in dry hot days](https://probablefutures.org/maps/?selected_map=change_in_dry_hot_days&map_version=latest&volume=water&warming_scenario=1#2.2/0/0)                                                   | 40607 | Precipitation     |
+| [Change in wettest 90 days](https://probablefutures.org/maps/?selected_map=change_in_wettest_90_days&map_version=latest&volume=water&warming_scenario=1#2.2/0/0)                                             | 40616 | Precipitation     |
+| [Change in frequency of "1-in-100 year" storm](https://probablefutures.org/maps/?selected_map=change_in_frequency_of_1-in-100_year_storm&map_version=latest&volume=water&warming_scenario=1#2.2/0/0)         | 40612 | Precipitation     |
+| [Change in precipitation of "1-in-100 year" storm](https://probablefutures.org/maps/?selected_map=change_in_precipitation_1-in-100_year_storm&map_version=latest&volume=water&warming_scenario=1#2.2/0/0)    | 40613 | Precipitation     |
+| [Change in water balance](https://probablefutures.org/maps/?selected_map=change_in_water_balance&map_version=latest&volume=land&warming_scenario=1#2.2/0/0)                                                  | 40703 | Dryness           |
+| [Likelihood of year-plus drought](https://probablefutures.org/maps/?selected_map=likelihood_of_year-plus_drought&map_version=latest&volume=land&warming_scenario=1#2.2/0/0)                                  | 40702 | Dryness           |
+| [Likelihood of year-plus extreme drought](https://probablefutures.org/maps/?selected_map=likelihood_of_year-plus_extreme_drought&map_version=latest&volume=land&warming_scenario=1#2.2/0/0)                  | 40701 | Dryness           |
+| [Change in wildfire danger days](https://probablefutures.org/maps/?selected_map=change_in_wildfire_danger_days&map_version=latest&volume=land&warming_scenario=1#2.2/0/0)                                    | 40704 | Dryness           |
+| [Climate zones](https://probablefutures.org/maps/?selected_map=climate_zones&map_version=latest&volume=other&warming_scenario=1#2.2/0/0)                                                                     | 40901 | Other             |
 
 ## Why these maps?
 Our process for creating maps involves considering particular phenomena and thresholds that matter to people and civilization. For example, nights above 20°C (68°F) are not comfortable for sleeping without air conditioning. All wet-bulb temperatures below carry some risk to human health for anyone working or playing outdoors. Loss of frost and freezing allow spread of pathogens. Increased precipitation and more severe and frequent storms require more infrastructure to hold and manage rainwater to prevent flooding. Now we welcome you to think of other examples and create tools using these maps. Tools using these maps can help communities, governments, businesses, and individuals prepare for the climate futures that are likely, and work to avoid the ones that carry the most profound risks for our world. We also welcome feedback about these maps and ideas for others.
 
 ## Tilesets
-The tileset IDs above can be used to create maps in your own application. To learn more about Mapbox tilesets, please see [Mapbox's Mapbox Tiling Service page](https://www.mapbox.com/mts).
+Probable Futures tilesets can be used to create maps in your own application. To see a complete list of tileset IDs for Probable Futures maps, please see the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=254758432).
 
-|                    Map name                   |        Tileset ID West        |        Tileset ID East        |
-|:---------------------------------------------:|:-----------------------------:|:-----------------------------:|
-| [Average temperature](https://probablefutures.org/maps/?volume=heat&selected_map=cl59gpzny00e814llii4s2wlu&warming_scenario=1#2.2/0/0)                           | probablefutures.40101-west-v1 | probablefutures.40101-east-v1 |
-| [Average daytime temperature](https://probablefutures.org/maps/?volume=heat&selected_map=cl59hjp67000u14o5o2wokukw&warming_scenario=1#2.2/0/0)                   | probablefutures.40102-west-v1 | probablefutures.40102-east-v1 |
-| [10 hottest days](https://probablefutures.org/maps/?volume=heat&selected_map=cl59lfhsw004n14n7uivj4q6k&warming_scenario=1#2.2/0/0)                               | probablefutures.40103-west-v1 | probablefutures.40103-east-v1 |
-| [Days above 32°C (90°F)](https://probablefutures.org/maps/?volume=heat&selected_map=cl59m7jcm001414o1hqf8x68l&warming_scenario=1#2.2/0/0)                        | probablefutures.40104-west-v1 | probablefutures.40104-east-v1 |
-| [Days above 35°C (95°F)](https://probablefutures.org/maps/?volume=heat&selected_map=cl59mxfs9001x14lrn1wdpqbk&warming_scenario=1#2.2/0/0)                        | probablefutures.40105-west-v1 | probablefutures.40105-east-v1 |
-| [Days above 38°C (100°F)](https://probablefutures.org/maps/?volume=heat&selected_map=cl59ntt93004o14l9j4j4vrxq&warming_scenario=1#2.2/0/0)                       | probablefutures.40106-west-v1 | probablefutures.40106-east-v1 |
-| [Average nighttime temperature](https://probablefutures.org/maps/?volume=heat&selected_map=cl59pelwc000014lggv1m6lg2&warming_scenario=1#2.2/0/0)                 | probablefutures.40201-west-v1 | probablefutures.40201-east-v1 |
-| [Frost nights](https://probablefutures.org/maps/?volume=heat&selected_map=cl59y3a8v000714lgpllqj741&warming_scenario=1#2.2/0/0)                                  | probablefutures.40202-west-v1 | probablefutures.40202-east-v1 |
-| [Nights above 20°C (68°F)](https://probablefutures.org/maps/?volume=heat&selected_map=cl59y9eeo000b14k14hh6ca78&warming_scenario=1#2.2/0/0)                      | probablefutures.40203-west-v1 | probablefutures.40203-east-v1 |
-| [Nights above 25°C (77°F)](https://probablefutures.org/maps/?volume=heat&selected_map=cl59ygl4z000814lgv5kqsdz7&warming_scenario=1#2.2/0/0)                      | probablefutures.40204-west-v1 | probablefutures.40204-east-v1 |
-| [Freezing days](https://probablefutures.org/maps/?volume=heat&selected_map=cl59ykyfg000c14k1iyl3n2em&warming_scenario=1#2.2/0/0)                                 | probablefutures.40205-west-v1 | probablefutures.40205-east-v1 |
-| [Days above 26°C (78°F) wet-bulb](https://probablefutures.org/maps/?volume=heat&selected_map=cl5amu6qw000116nvng3b1p55&warming_scenario=1#2.2/0/0)               | probablefutures.40301-west-v1 | probablefutures.40301-east-v1 |
-| [Days above 28°C (82°F) wet-bulb](https://probablefutures.org/maps/?volume=heat&selected_map=cl5amzusp000614q9nl0de34p&warming_scenario=1#2.2/0/0)               | probablefutures.40302-west-v1 | probablefutures.40302-east-v1 |
-| [Days above 30°C (86°F) wet-bulb](https://probablefutures.org/maps/?volume=heat&selected_map=cl5an7fl4000216nv693x0atj&warming_scenario=1#2.2/0/0)               | probablefutures.40303-west-v1 | probablefutures.40303-east-v1 |
-| [Days above 32°C (90°F) wet-bulb](https://probablefutures.org/maps/?volume=heat&selected_map=cl5anc752002m14ung7uqotzq&warming_scenario=1#2.2/0/0)               | probablefutures.40304-west-v1 | probablefutures.40304-east-v1 |
-| [10 hottest wet-bulb days](https://probablefutures.org/maps/?volume=heat&selected_map=cl5anh0ke003a14pm9u2g5rdq&warming_scenario=1#2.2/0/0)                      | probablefutures.40305-west-v1 | probablefutures.40305-east-v1 |
-| [Change in total annual precipitation](https://probablefutures.org/maps/?volume=water&selected_map=cl56ktc2f000l14l930kj9hcl&warming_scenario=1#2.2/0/0)          | probablefutures.40601-west-v1 | probablefutures.40601-east-v1 |
-| [Change in dry hot days](https://probablefutures.org/maps/?volume=water&selected_map=cl589lwuf000814unun1bxaxj&warming_scenario=1#2.2/0/0)                        | probablefutures.40607-west-v1 | probablefutures.40607-east-v1 |
-| [Change in frequency of "1-in-100 year" storm](https://probablefutures.org/maps/?volume=water&selected_map=cl5anvbn3000416nvlqq0q625&warming_scenario=1#2.2/0/0)  | probablefutures.40612-west-v1 | probablefutures.40612-east-v1 |
-| [Change in precipitation "1-in-100 year" storm](https://probablefutures.org/maps/?volume=water&selected_map=cl6kf3j3m003r15lji9052p2h&warming_scenario=1#2.2/0/0) | probablefutures.40613-west-v1 | probablefutures.40613-east-v1 |
-| [Change in snowy days](https://probablefutures.org/maps/?volume=water&selected_map=cl6kf3j3m003r15lji9052p2h&warming_scenario=1#2.2/0/0)                          | probablefutures.40614-west-v1 | probablefutures.40614-east-v1 |
-| [Change in wettest 90 days](https://probablefutures.org/maps/?volume=water&selected_map=cl5aodqou005m14l92iv0mjnc&warming_scenario=1#2.2/0/0)                     | probablefutures.40616-west-v1 | probablefutures.40616-east-v1 |
-| [Likelihood of year-plus extreme drought](https://probablefutures.org/maps/?volume=land&selected_map=cl8a0g5rj005p14p5qywg0ugr&warming_scenario=1#2.2/0/0)       | probablefutures.40701-west-v1 | probablefutures.40701-east-v1 |
-| [Likelihood of year-plus drought](https://probablefutures.org/maps/?volume=land&selected_map=cl8a0lz5c000m14l7ym1k9el4&warming_scenario=1#2.2/0/0)               | probablefutures.40702-west-v1 | probablefutures.40702-east-v1 |
-| [Change in water balance](https://probablefutures.org/maps/?volume=land&selected_map=cl82t4a5z002s14ochl1tq75f&warming_scenario=1#2.2/0/0)                       | probablefutures.40703-west-v1 | probablefutures.40703-east-v1 |
-| [Change in wildfire danger days](https://probablefutures.org/maps/?volume=land&selected_map=cl8a0rh65006414qloma90grc&warming_scenario=1#2.2/0/0)                | probablefutures.40704-west-v1 | probablefutures.40704-east-v1 |
-| [Climate zones](https://probablefutures.org/maps/?volume=other&selected_map=cl82u2msx003a15lkolpjs18p&warming_scenario=1#2.2/0/0)                                 | probablefutures.40901-west-v1 | probablefutures.40901-east-v1 |
+To learn more about Mapbox tilesets, please see [Mapbox's Mapbox Tiling Service page](https://www.mapbox.com/mts).
 
-Note: Tilesets are split between west and east due to Mapbox Tiling Service size constraints but are designed to be rendered together seamlessly, as seen in the [public maps application](https://probablefutures.org/maps).
+Please note: Tilesets are split between west and east due to Mapbox Tiling Service size constraints but are designed to be rendered together seamlessly, as seen in the [public maps application](https://probablefutures.org/maps).
 
 ## Tileset feature attributes
 Tileset feature attributes represent data in a Mapbox Tiling Service map. Probable Futures maps use feature attributes to represent a range of three expected values for each warming scenario, resulting in a total of 18 values per grid cell. These values can be seen by inspecting a tileset in Mapbox studio. To expose them in an application for users, they can be queried and displayed in a pop-up on a map as you can see by clicking on any square with data on any map on probablefutures.org/maps.
