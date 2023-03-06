@@ -9,8 +9,8 @@ parent: API
 
 The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
--   `lon`: Shorthand for longitude, of type string, optional. Valid longitudes should be between -180 and 180.
--   `lat`: Shorthand for latitude, of type string, optional. Valid latitudes should be between -90 and 90.
+-   `longitude`: Shorthand for longitude, of type number, optional. Valid longitudes should be between -180 and 180.
+-   `latitude`: Shorthand for latitude, of type number, optional. Valid latitudes should be between -90 and 90.
 -   `country`: Generally recognized countries or country codes, of type string, optional. Example "France" or "fr". Can be sent alone or with city and/or address.
 -   `city`: Cities, villages, municipalities, of type string, optional. Should be sent with a country and/or address.
 -   `address`: Postal addresses, individual residential or business addresses, of type string, optional. Can be sent alone or with city and/or country.
@@ -55,7 +55,7 @@ Calling the API using cURL with lon and lat:
 curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
 --header 'Authorization: Bearer ACCESS_TOKEN_HERE' \
 --header 'Content-Type: application/json' \
---data-raw '{"query":"mutation {\n  getDatasetStatistics(input: {\n        lat: \"40.7\",\n        lon: \"-73.9\",\n        warmingScenario: \"1.5\"\n    }) {\n    datasetStatisticsResponses{\n        datasetId\n        highValue\n        lowValue\n        midValue\n        name\n        unit\n        warmingScenario\n    }\n  }\n}","variables":{}}'
+--data-raw '{"query":"mutation {\n  getDatasetStatistics(input: {\n        latitude: 40.7,\n        longitude: -73.9,\n        warmingScenario: \"1.5\"\n    }) {\n    datasetStatisticsResponses{\n        datasetId\n        highValue\n        lowValue\n        midValue\n        name\n        unit\n        warmingScenario\n    }\n  }\n}","variables":{}}'
 ```
 
 Calling the API in JavaScript with lon and lat:
@@ -66,7 +66,7 @@ headers.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
 headers.append("Content-Type", "application/json");
 
 var graphql = JSON.stringify({
-  query: "mutation {\n      getDatasetStatistics(\n        input: {lon: \"-73.9\", lat: \"40.7\", warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
+  query: "mutation {\n      getDatasetStatistics(\n        input: {longitude: -73.9, latitude: 40.7, warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
     variables: {}
 });
 var requestOptions = {
@@ -90,7 +90,7 @@ headers = {
     "Authorization": "Bearer " + ACCESS_TOKEN_HERE
 }
 query = {
-    "query": "mutation {\n      getDatasetStatistics(\n        input: {lon: \"-73.9\", lat: \"40.7\", warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
+    "query": "mutation {\n      getDatasetStatistics(\n        input: {longitude: -73.9, latitude: 40.7, warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
     "variables": {}
 }
 response = requests.post('https://graphql.probablefutures.org/graphql', headers=headers, json=query)
