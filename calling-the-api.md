@@ -9,11 +9,11 @@ parent: API
 
 The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
--   `longitude`: Shorthand for longitude, of type number, optional. Valid longitudes should be between -180 and 180.
--   `latitude`: Shorthand for latitude, of type number, optional. Valid latitudes should be between -90 and 90.
+-   `longitude`: Type number, optional. Valid longitudes should be between -180 and 180.
+-   `latitude`: Type number, optional. Valid latitudes should be between -90 and 90.
 -   `country`: Generally recognized countries or country codes, of type string, optional. Example "France" or "fr". Can be sent alone or with city and/or address.
 -   `city`: Cities, villages, municipalities, of type string, optional. Should be sent with a country and/or address.
--   `address`: Postal addresses, individual residential or business addresses, of type string, optional. Can be sent alone or with city and/or country.
+-   `address`: Any place name, postal addresses, individual residential or business addresses, of type string, optional. Can be sent alone or with city and/or country.
 -   `warmingScenario`: Specifies the warming scenario, of type string, required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
 -   `datasetId`: ID of the dataset requested, of type integer, optional. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](/maps) page.
 
