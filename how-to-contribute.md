@@ -10,4 +10,4 @@ If you plan to contribute code or documentation to Probable Futures open source
 
 To begin contributing, please [fork](http://help.github.com/forking) the project repository that you would like to contribute to from among the [Probable Futures open-source projects](https://github.com/Probable-Futures/). Then, [create a Pull Request](https://help.github.com/articles/creating-a-pull-request/). When your Pull Request is ready to be reviewed and merged, please add [MoustafaWehbe](https://github.com/MoustafaWehbe) as a reviewer or tag Moustafa in a GitHub comment or in a message in our #developer-resources channel in the [Alpha Group Slack organization](https://probablefutures.org/alpha-program/?tab=about).
 
-If you have suggestions, ideas, or contributions outside the scope of open-source project contributions, please [contact us](https://probablefutures.org/contact/).
+If you have thoughts, feedback, or ideas beyond the scope of open-source project contributions, please [contact us](https://probablefutures.org/contact/).
