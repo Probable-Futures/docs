@@ -76,10 +76,25 @@ Tileset feature attributes represent data in a Mapbox Tiling Service map. Probab
 |                  | data_3c_mid          |
 
 ### Range of expected values
-Climate data predict ranges of weather that is typical for a particular place and the particular atmosphere at the time. Consider [Delhi with a climate 1.0°C above the pre-industrial climate](https://probablefutures.org/maps/?selected_map=cl59m7jcm001414o1hqf8x68l&volume=heat&warming_scenario=1#9/28.5769/77.1675). Some years will be warmer than is typical, others typical, and others cooler than typical. As you can see by clicking on Delhi in the map linked above, Delhi with a climate of 1.0°C above the pre-industrial climate typically experiences 216 days above 32°C. In a warm year, about 10% of the time, Delhi experiences about 250 or more days above 32°C while in a cool year, about 10% of the time, Delhi experiences about 175 or fewer days above 32°C.
+Probable Futures maps contain low, mid, and high values for each location and warming scenario. You can think of these values as a range. People must be prepared for the full range in the same way we all must be prepared for a range of weather. In other words, this range can be thought of as potential outcomes in any given year in the specified warming scenario for the specified location.
 
-As the warming scenario numbers increase from 1°C above pre-industrial to 1.1°C, 1.2°C and eventually 1.5°C, the range shifts warmer. If you click the 1.5°C tab, you will see the range of expected values in Delhi has shifted. Now, the low, mid and high number of days above 32°C is 197, 227, and 251. A cool year is now considerably warmer. You can think of this as a bell curve of values shifting to the right, toward the warmer side of a graph of temperatures in a place. Often the shape of the bell curve changes as it shifts.  
+In some places, the ranges of potential outcomes are wider. For those of us who live in places that can be both very hot and very cold, we know this well. We must own different types of clothing for summer and winter. In other places, ranges are narrower. In places with narrower ranges, people don't need so many different types of clothing.
 
-- `high`: higher than typical. Conditions should be expected to be this value or higher in approximately 10% of years.
-- `mid`: values are typical. This is the average or median condition. (Some maps use average while others use median for this value.)
-- `low`: values are lower than typical. Conditions should be expected to be this value or lower in approximately 10% of years.
+As the climate changes, these ranges change in every place. The range of values in the API offer an opportunity to prepare for ranges of outcomes that are manageable and to seek changes in human actions that can help avoid ranges in warming scenarios that are unmanageable.
+
+The low and high values are not the lowest or highest possible values that could occur in the specified location at a specified warming scenario. In other words, the range goes beyond these low and high points.
+
+For all current Probable Futures maps with low and high values, the low and high are 5th and 95th percentile values. So, for these maps, the low and high values should be expected about 5% of the time each, on average. Lower lows and higher highs may occur as well.
+
+
+#### Range of expected values: applied example
+
+Consider [the number of days above 32°C (90°F) in Delhi in a 1.5°C warming scenario](https://probablefutures.org/maps/?selected_map=days_above_32c&volume=heat&warming_scenario=1.5&map_version=latest#9.18/28.5824/77.1749). In this scenario, the global average temperature is 1.5°C above the pre-industrial global average. Delhi is warmer too. It experiences new ranges of weather.
+
+As you can see by clicking on Delhi in the map linked above, Delhi with a climate of 1.5°C above the pre-industrial climate typically experiences 227 days above 32°C on average. In a warm year, about 5% of the time, Delhi experiences about 264 days above 32°C. In a cool year, about 5% of the time, Delhi experiences about 191 days above 32°C.
+
+If the warming scenario numbers increase from 1.5°C above pre-industrial to 1.6°C, 1.7°C and eventually 2°C, the range shifts warmer again. If you click the 2°C tab, you will see the range of expected values in Delhi has shifted. In this 2°C scenario, the low, mid and high number of days above 32°C is 195, 232, and 269. You can think of this as a bell curve of values shifting to the right, toward the warmer side of a graph of temperatures in a place. Often the shape of the bell curve changes as it shifts.  
+
+- `high`: This is the high value in the range. These conditions should be expected approximately 5% of the time.
+- `mid`: This is the average or median condition. (Some maps use average while others use median for this value. See the labels on the map to differentiate.)
+- `low`: This is the low value in the range. These conditions should be expected approximately 5% of the time.
