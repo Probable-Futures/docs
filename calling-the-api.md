@@ -30,6 +30,7 @@ The response of the API includes a list of objects that has the following proper
 -   warmingScenario
 -   longitude
 -   latitude
+-   info
 
 Some or all the fields can be selected to be part of the response.
 
@@ -46,6 +47,25 @@ Response example:
   "warmingScenario": "1.0"
 }
 ```
+
+The "info" property is an object that provides additional details pertaining to the result of the API call. For example, you can use it to get the name of the climate zone value:
+
+```
+{
+  "datasetId": 40901,
+  "midValue": "33.0",
+  "name": "Climate zones",
+  "unit": "class",
+  "warmingScenario": "1.0",
+  "longitude": -74,
+  "latitude": 40.8,
+  "info": {
+    "climateZoneName": "Temperate humid"
+  }
+}
+```
+
+(More examples will be provided as we expand this object with additional fields.)
 
 ### Applied examples
 
