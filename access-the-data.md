@@ -9,7 +9,7 @@ Our climate science partner, Woodwell Climate Research Center, downloads and pre
     A tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at up to 22 preset zoom levels.
     In our system, the data for each map is distributed among two tileset: east and west. Each tileset is composed of multiple layers, which we refer to as regions. Each region is created within a specified bounding box defined by its coordinates. For example, the region with id `region_as_oc_7`, is located in the east tileset and has a bounding box, `bbox = [65.2, -25.8, 180, -10.58]`.
 
-    {: .note } We split our tilesets into east and west, and each of those into many regions, because Mapbox has size limitations on both tilesets and layers. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points. 
+    {: .note } We split our tilesets into east and west, and each of those into many regions, because Mapbox has size limitations on both tilesets and layers. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points.
 
 -   **Map styles**
 
@@ -33,7 +33,7 @@ Our climate science partner, Woodwell Climate Research Center, downloads and pre
     ```
 
     In the above example, any values of `data_1c_mean` that are less than 1 will be colored with `#515866`, values between 1 and 8 will be colored with `#0ED5A3`, and so on.
-    
+
     When creating map styles you can also include some of the default layers provided by Mapbox like place labels and geopolitical boundaries.
 
 # Ways to access our data
@@ -61,7 +61,7 @@ Our data is designed to be accessed and used in many ways, such as:
 
     -   [Request access to Probable Futures Pro](https://airtable.com/shrOMfMgh7EoHajKN)
     -   After siging in, go to the [datasets page](https://pro.probablefutures.org/dashboard/datasets)
-    -   Scroll down to find a list of all the Probable Futures
+    -   Scroll down to find a list of all the Probable Futures maps
     -   Click the "Download" button next to the dataset you want to download
     -   By default, all data is selected and you can click "Download" to begin downloading the full map dataset. If you would like to download data for a specific country, select the country in the dropdown. You can also select the columns to include in the CSV file.
 
