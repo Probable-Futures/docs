@@ -1,3 +1,9 @@
+---
+layout: default
+title: Access the data
+nav_order: 3
+---
+
 # Data Background
 
 Climate models are created and maintained by scientific institutions around the world which make their models available for download. Although these models have technically been publicly available for a long time, downloading and using them requires so much specialized climate science knowledge that they have remained only available for scientists. Probable Futures makes climate models available to anyone, anywhere. If you'd like to learn more about the models we use, visit the [science section on probablefutures.org](https://probablefutures.org/science).
