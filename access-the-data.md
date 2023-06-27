@@ -15,7 +15,8 @@ Our climate science partner, Woodwell Climate Research Center, downloads and pre
     A tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at up to 22 preset zoom levels.
     In our system, the data for each map is distributed among two tileset: east and west. Each tileset is composed of multiple layers, which we refer to as regions. Each region is created within a specified bounding box defined by its coordinates. For example, the region with id `region_as_oc_7`, is located in the east tileset and has a bounding box, `bbox = [65.2, -25.8, 180, -10.58]`.
 
-    {: .note } We split our tilesets into east and west, and each of those into many regions, because Mapbox has size limitations on both tilesets and layers. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points.
+    {: .note }
+    We split our tilesets into east and west, and each of those into many regions, because Mapbox has size limitations on both tilesets and layers. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points.
 
 -   **Map styles**
 
