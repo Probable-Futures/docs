@@ -2,7 +2,7 @@
 layout: default
 title: Access the data
 nav_order: 2
-parent: PF Data
+parent: Probable Futures Data
 ---
 
 # Ways to access our data
