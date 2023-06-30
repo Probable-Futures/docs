@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Calling the API
-nav_order: 4
+nav_order: 2
 parent: API
 ---
 

@@ -1,22 +1,24 @@
 ---
 layout: default
 title: API access
-nav_order: 2
+nav_order: 1
 parent: API
 ---
 
 # API access
-To access the API, you will need credentials. Someone on the Probable Futures team will share these with you in a secure way that works for your team. We expect you to store these credentials in a secure location appropriate for storing secrets such as a password manager. 
 
-- ID
-- Secret
+To access the API, you will need credentials. Someone on the Probable Futures team will share these with you in a secure way that works for your team. We expect you to store these credentials in a secure location appropriate for storing secrets such as a password manager.
+
+-   ID
+-   Secret
 
 ## Request an access token
+
 Using your access credentials, you can request an access token.
 
 Below are examples of how to call the authorization API to obtain access tokens. The access token will expire in 24hrs. The response is a JWT token of type `Bearer`.
 
-- **Using cURL**:
+-   **Using cURL**:
 
 ```
 curl --request POST \
@@ -24,7 +26,8 @@ curl --request POST \
   --header 'content-type: application/json' \
   --data '{"client_id":"CLIENT_ID_HERE","client_secret":"CLIENT_SECRET_HERE","audience":"https://graphql.probablefutures.com","grant_type":"client_credentials"}'
 ```
-- **Using JavaScript**:
+
+-   **Using JavaScript**:
 
 ```
 var request = require("request");
@@ -40,7 +43,7 @@ console.log(body);
 });
 ```
 
-- **Using Python**:
+-   **Using Python**:
 
 ```
 import requests
@@ -49,4 +52,4 @@ response = requests.post('https://probablefutures.us.auth0.com/oauth/token',
 access_token = response.json()['access_token']
 ```
 
-  **Note:** Make sure to set the correct client credentials before using the API.
+**Note:** Make sure to set the correct client credentials before using the API.
