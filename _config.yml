@@ -1,4 +1,3 @@
-
 title: Probable Futures Developer Documentation
 logo: "/assets/probable-futures-logo-long.svg"
 
@@ -11,25 +10,39 @@ permalink: pretty
 # color_scheme: dark
 color_scheme: pf
 
-
 exclude:
- # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
-   - .sass-cache/
-   - .jekyll-cache/
-   - gemfiles/
-   - Gemfile
-   - Gemfile.lock
-   - node_modules/
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
+    # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+    - .sass-cache/
+    - .jekyll-cache/
+    - gemfiles/
+    - Gemfile
+    - Gemfile.lock
+    - node_modules/
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems/
+    - vendor/ruby/
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
+callouts_level: quiet # or loud
+callouts:
+    highlight:
+        color: yellow
+    important:
+        title: Important
+        color: blue
+    new:
+        title: New
+        color: green
+    note:
+        title: Note
+        color: purple
+    warning:
+        title: Warning
+        color: red
 # footer_content: "This work is licensed under a Creative Commons Attribution 4.0 International License. <a href=\"https://probablefutures.org/licensing/\">Read more about Probable Futures licensing.</a>"
-
 
 # Example of other things you can add here: https://github.com/just-the-docs/just-the-docs/blob/main/_config.yml
