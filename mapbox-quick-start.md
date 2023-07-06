@@ -16,6 +16,7 @@ Follow these steps to get started:
 1. Download a Mapbox style JSON file from the Probable Futures [map styles folder in Github](https://github.com/Probable-Futures/docs/tree/main/mapStyles).
 2. On the [Mapbox Studio styles page](studio.mapbox.com), click the "New style" button. Then click the "Upload Style" tab.
 3. Upload the JSON file you downloaded from the Probable Futures map styles folder in Github.
+4. Finally, click the "Customize" button to view and edit the map.
 
 ## How it works
 The Mapbox Style JSON contains all the styles (colors, layers, etc.) and references to the Probable Futures tilesets, which contain the actual climate data.
