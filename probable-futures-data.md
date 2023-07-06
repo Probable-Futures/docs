@@ -19,7 +19,7 @@ The Probable Futures climate science partner, Woodwell Climate Research Center, 
 
 ## Examples of applications of the data
 
-Examples of how the data can be visualized as maps may be seen in the public maps application located at [probablefutures.org/maps](probablefutures.org/maps).
+Examples of how the data can be visualized as maps may be seen in the public maps application located at [probablefutures.org/maps](https://probablefutures.org/maps).
 
 ## Further reading
 

@@ -15,7 +15,7 @@ The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/gr
 -   `city`: Cities, villages, municipalities, of type string, optional. Should be sent with a country and/or address.
 -   `address`: Any place name, postal addresses, individual residential or business addresses, of type string, optional. Can be sent alone or with city and/or country.
 -   `warmingScenario`: Specifies the warming scenario, of type string, required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
--   `datasetId`: ID of the dataset requested, of type integer, optional. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](/maps) page.
+-   `datasetId`: ID of the dataset requested, of type integer, optional. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](./maps.md) page.
 
 ### Responses
 

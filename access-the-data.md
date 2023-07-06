@@ -13,16 +13,9 @@ Our data is designed to be accessed and used in many ways, such as:
 
     By using our API you can receive climate model data for any place in the world. Follow the instructions in [API access](./api-access.md) for information on how to get access to the API. More instructions about how to use the API can be found in [calling the API](./calling-the-api.md).
 
-2.  **Using the map style JSON files**
+2.  **Using Mapbox Studio**
 
-    If you want to use Mapbox Studio or Mapbox APIs to create your own maps, you can try this method. Visit [our public docs repo on Github](https://github.com/Probable-Futures/docs/tree/main/mapStyles) to find JSON files containing the styles for each map. These files can be imported into your Mapbox account allowing you to customize the maps by adding or removing layers according to your requirements. Here are the steps:
-
-    -   Sign up or sign in to your Mapbox account
-    -   Go to the styles page in [Mapbox studio](https://studio.mapbox.com/)
-    -   Click the "New style" button, and a modal will appear
-    -   Click the "Upload Style" button at the top of the modal
-    -   Click "Select a file" to select one of the JSON files you downloaded from the documentation repository
-    -   Finally click the "Customize" button to view and edit the map
+    This is a fast and easy way to get started with Probable Futures maps. Go to the [Mapbox quick start page](./mapbox-quick-start.md) and follow the instructions there to begin.
 
 3.  **Getting the data as CSV files**
 
