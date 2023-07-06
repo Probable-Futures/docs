@@ -7,8 +7,6 @@ has_children: true
 
 # The API
 
-The Probable Futures API is a GraphQL API. We originally created the API for our own use on probablefutures.org and various other experimental mapping tools.
+The Probable Futures API is a GraphQL API. We originally created the API to support probablefutures.org and [Probable Futures Pro](https://probablefutures.org/pro/). Now, we are making it available for anyone to use.
 
-We are now in the early stages of making the API available for others to use. This documentation describes how to access and use the API.
-
-We have only made certain queries available for now but we welcome feedback and ideas about other queries or API structures that would be useful.
+For now, credentials are required to use the API but we are happy to share credentials with anyone. To request access, please [fill out this form](https://airtable.com/shrOMfMgh7EoHajKN). We will get back to you quickly. 
