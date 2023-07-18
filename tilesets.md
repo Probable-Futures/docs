@@ -17,6 +17,11 @@ To learn more about Mapbox tilesets, please see [Mapbox's Mapbox Tiling Service 
 {: .note }
 We split our tilesets into east and west, and each of those into many regions, because Mapbox has size limitations on both tilesets and layers. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points.
 
+## Data coverage and special values
+Probable Futures maps contain climate data for most land on Earth but do not cover parts of the Arctic and Antarctic and remote islands. This is because the data comes from CORDEX-CORE framework, a standardization for regional climate model output. To learn more about where the data comes from, visit the [Science page](https://probablefutures.org/science/our-maps/).
+
+We also choose to omit data in deserts for our maps of drought, wildfire, and water balance because these areas are already consistently dry. These dry lands are noted in tilesets with a special value: `-88888`.
+
 ## Map styles
 
 After creating the tileset, we create a map style which is compatible with Mapbox and can be displayed in the browser. This Mapbox style is a document that defines the visual appearance of a map: what data to draw, the order to draw it in, and how to style the data when drawing it. A style document is a JSON object with specific root level and nested properties. This specification defines and describes these properties. For example, in one part of this JSON object, you can specify the bins and colors to use based on the data that exists in the tileset. You can specify an attribute, such as `data_1c_mean`, and then specify what colors to use at different values of this attribute. This can be done using Mapbox expressions like this:
