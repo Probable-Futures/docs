@@ -7,15 +7,14 @@ parent: Maps
 
 # Tilesets
 
-A tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at up to 22 preset zoom levels.
-In our system, the data for each map is distributed among two tileset: east and west. Each tileset is composed of multiple layers, which we refer to as regions. Each region is created within a specified bounding box defined by its coordinates. For example, the region with id `region_as_oc_7`, is located in the east tileset and has a bounding box, `bbox = [65.2, -25.8, 180, -10.58]`.
+Probable Futures maps are made up of Mapbox tilesets. A Mapbox tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at up to 22 preset zoom levels.
 
 Probable Futures tilesets can be used to create maps in your own application. To see a complete list of tileset IDs for Probable Futures maps, please see the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=254758432).
 
 To learn more about Mapbox tilesets, please see [Mapbox's Mapbox Tiling Service page](https://www.mapbox.com/mts).
 
 {: .note }
-We split our tilesets into east and west, and each of those into many regions, because Mapbox has size limitations on both tilesets and layers. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points.
+Every Probable Futures map is made up of two tilesets and each tileset is composed of many layers we call regions. Each map is divided in exactly the same way: one tileset for the east (e.g., `probablefutures.40104-east-v3`) with Eurasia, Africa, Australia in the east and one for the west (e.g., `probablefutures.40104-west-v3`) with the Americas. There are 24 regions per map: eight for Asia and Oceana (e.g., `region_as_oc_1`), nine for Europe and Africa (e.g., `region_eu_af_2`), and seven for the Americas (e.g., `region_na_sa_3`). Each region is created within a specified bounding box defined by its coordinates. For example, the region with id `region_as_oc_7`, is located in the east tileset and has a bounding box, `bbox = [65.2, -25.8, 180, -10.58]`. These divisions are necessary because Mapbox has size limitations on both tilesets overall and layers within tilesets. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points. Generally, these divisions can be ignored. For example, when creating a map with our [Mapbox quick-start](/mapbox-quick-start.md) guide, details about tileset and layer divisions are abstracted away in the Mapbox style file and need not be understood or modified for most use-cases.
 
 ## Data coverage and special values
 Probable Futures maps contain climate data for most land on Earth but do not cover parts of the Arctic and Antarctic and remote islands. This is because the data comes from CORDEX-CORE framework, a standardization for regional climate model output. To learn more about where the data comes from, visit the [Science page](https://probablefutures.org/science/our-maps/).
