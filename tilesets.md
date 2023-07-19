@@ -17,6 +17,11 @@ To learn more about Mapbox tilesets, please see [Mapbox's Mapbox Tiling Service 
 {: .note }
 We split our tilesets into east and west, and each of those into many regions, because Mapbox has size limitations on both tilesets and layers. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points.
 
+## Data coverage and special values
+Probable Futures maps contain climate data for most land on Earth but do not cover parts of the Arctic and Antarctic and remote islands. This is because the data comes from CORDEX-CORE framework, a standardization for regional climate model output. To learn more about where the data comes from, visit the [Science page](https://probablefutures.org/science/our-maps/).
+
+We also choose to omit data in deserts for our maps of drought, wildfire, and water balance because these areas are already consistently dry. These dry lands are noted in tilesets with a special value: `-88888`.
+
 ## Map styles
 
 After creating the tileset, we create a map style which is compatible with Mapbox and can be displayed in the browser. This Mapbox style is a document that defines the visual appearance of a map: what data to draw, the order to draw it in, and how to style the data when drawing it. A style document is a JSON object with specific root level and nested properties. This specification defines and describes these properties. For example, in one part of this JSON object, you can specify the bins and colors to use based on the data that exists in the tileset. You can specify an attribute, such as `data_1c_mean`, and then specify what colors to use at different values of this attribute. This can be done using Mapbox expressions like this:
@@ -88,6 +93,13 @@ As you can see by clicking on Delhi in the map linked above, Delhi with a climat
 
 If the warming scenario numbers increase from 1.5°C above pre-industrial to 1.6°C, 1.7°C and eventually 2°C, the range shifts warmer again. If you click the 2°C tab, you will see the range of expected values in Delhi has shifted. In this 2°C scenario, the low, mid and high number of days above 32°C is 195, 232, and 269. You can think of this as a bell curve of values shifting to the right, toward the warmer side of a graph of temperatures in a place. Often the shape of the bell curve changes as it shifts.
 
--   `high`: This is the high value in the range. These conditions should be expected approximately 5% of the time.
--   `mid`: This is the average or median condition. (Some maps use average while others use median for this value. See the labels on the map to differentiate.)
 -   `low`: This is the low value in the range. These conditions should be expected approximately 5% of the time.
+-   `mid`: This is the average or median condition. Conditions near this value should be expected in a typical year.
+-   `high`: This is the high value in the range. These conditions should be expected approximately 5% of the time.
+
+##### Note on average and median values
+When creating these maps, we realized the range of values sometimes formed a normal distribution and other times skewed toward the tail. To provide reliable expected mid values, we chose to use median on maps that tend to have ranges with long tails.
+- Maps of temperature use average
+- Maps of precipitation use median
+- Maps of dryness vary: the two maps of drought use average and the map of wildfire and water balance use median
+- The climate zones map uses average

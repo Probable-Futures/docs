@@ -7,11 +7,11 @@ has_children: true
 
 # The maps
 
-The Probable Futures maps are climate model data displayed as Mapbox tilesets. To learn more about climate models and the specific models Probable Futures uses, please see [About the data](https://probable-futures.github.io/docs/about-the-data/) and [the science page](https://probablefutures.org/science/) on probablefutures.org.
+The Probable Futures maps are climate model data displayed as [Mapbox tilesets](/tilesets.md). To learn more about climate models and the specific models Probable Futures uses, please see [About the data](https://probable-futures.github.io/docs/about-the-data/) and [the science page](https://probablefutures.org/science/) on probablefutures.org.
 
 ## All maps
 
-Below is a list of all maps currently published on [probablefutures.org/maps](). To see this list in a spreadsheet with additional metadata such as map units, tileset IDs, climate model information, and technical descriptions, please see the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=254758432).
+Below is a list of all maps currently published on [probablefutures.org/maps](https://probablefutures.org/maps). To see this list in a spreadsheet with additional metadata such as map units, tileset IDs, climate model information, and technical descriptions, please see the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=254758432).
 
 | Map name                                                                                                                                                                                                  | ID    | Category          |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ----------------- |
