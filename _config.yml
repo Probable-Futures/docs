@@ -23,6 +23,20 @@ exclude:
     - vendor/gems/
     - vendor/ruby/
 
+# Aux links for the upper right navigation
+aux_links:
+  "View on GitHub":
+    - "https://github.com/Probable-Futures/docs"
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
+
+# External navigation links
+# Note from Peter: It's unclear if this config is needed in addition to the one above, since it seems to be a duplicate. 
+# nav_external_links:
+#   - title: View on GitHub
+#     url: https://github.com/Probable-Futures/docs
+
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
