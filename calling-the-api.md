@@ -9,13 +9,18 @@ parent: API
 
 The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
--   `longitude`: Type number, optional. Valid longitudes should be between -180 and 180.
--   `latitude`: Type number, optional. Valid latitudes should be between -90 and 90.
--   `country`: Generally recognized countries or country codes, of type string, optional. Example "France" or "fr". Can be sent alone or with city and/or address.
--   `city`: Cities, villages, municipalities, of type string, optional. Should be sent with a country and/or address.
--   `address`: Any place name, postal addresses, individual residential or business addresses, of type string, optional. Can be sent alone or with city and/or country.
--   `warmingScenario`: Specifies the warming scenario, of type string, required. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
--   `datasetId`: ID of the dataset requested, of type integer, optional. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](./maps.md) page.
+1. Location data, in any of the following formats (required)
+-   `longitude`: Type: number. Valid longitudes should be between -180 and 180.
+-   `latitude`: Type: number. Valid latitudes should be between -90 and 90.
+-   `country`: Generally recognized countries or country codes. Type: string. Example: "France" or "fr". Can be sent alone or with city and/or address.
+-   `city`: Cities, villages, municipalities. Type: string. Should be sent with a country and/or address.
+-   `address`: Any place name, postal addresses, individual residential or business addresses. Type: string. Can be sent alone or with city and/or country.
+
+2. Warming scenario (required)
+-   `warmingScenario`: Specifies the warming scenario. Type string. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0".
+
+3. Dataset ID (optional)
+-   `datasetId`: ID of the dataset requested, of type integer. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](./maps.md) page.
 
 ### Responses
 
