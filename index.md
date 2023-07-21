@@ -4,10 +4,10 @@ title: Home
 nav_order: 1
 ---
 
-# Probable Futures Developer Resources
-Welcome! These docs describe the Probable Futures developer resources such as the Probable Futures API, maps, and more.
+# Probable Futures Developer Documentation
+Welcome! These docs describe how to use the Probable Futures developer resources such as the Probable Futures API, data, maps, and more.
 
-All resources are different ways of accessing or visualizing the same datasets. The datasets are global, high-resolution modeled climate scenarios, publicly available as maps on [probablefutures.org/maps](https://probablefutures.org/maps).
+All resources found here are different ways of accessing or visualizing the same underlying datasets. The datasets are global, high-resolution modeled climate scenarios. In addition to being available in the form of the developer resources described in these docs, the datasets are also available as [interactive maps](https://probablefutures.org/maps).
 
 By understanding these scenarios, anyone can prepare for the futures that are likely and work to avoid the ones that carry the most profound risks for our world.
 
