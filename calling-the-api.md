@@ -22,7 +22,30 @@ The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/gr
 3. Dataset ID (optional)
 -   `datasetId`: ID of the dataset requested, of type integer. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](./maps.md) page.
 
-### Responses
+#### Example request
+```
+mutation {
+  getDatasetStatistics(input: {
+        country: "USA"
+        city: "New York City"
+        warmingScenario: "1.5"
+        datasetId: 40104
+    }) {
+    datasetStatisticsResponses{
+        datasetId
+        midValue
+        name
+        unit
+        warmingScenario
+        latitude
+        longitude
+        info
+    }
+  }
+}
+```
+
+## Responses
 
 The response of the API includes a list of objects that has the following properties:
 
@@ -39,21 +62,30 @@ The response of the API includes a list of objects that has the following proper
 
 Some or all the fields can be selected to be part of the response.
 
-Response example:
+#### Example response:
 
 ```
 {
-  "datasetId": 40104,
-  "highValue": "28.0",
-  "lowValue": "6.0",
-  "midValue": "17.0",
-  "name": "Days above 32°C (90°F)",
-  "unit": "days",
-  "warmingScenario": "1.0"
+  "data": {
+    "getDatasetStatistics": {
+      "datasetStatisticsResponses": [
+        {
+          "datasetId": 40104,
+          "midValue": "25.0",
+          "name": "Days above 32°C (90°F)",
+          "unit": "days",
+          "warmingScenario": "1.5",
+          "latitude": 40.8,
+          "longitude": -74,
+          "info": {}
+        }
+      ]
+    }
+  }
 }
 ```
 
-The "info" property is an object that provides additional details pertaining to the result of the API call. For example, you can use it to get the name of the climate zone value:
+The "info" property is an object that provides additional details related to the query, if there any, such as for the climate zones dataset. Here is an example of the "info" property displaying the name of the climate zone that is expected in a 1.0°C warming scenario:
 
 ```
 {
@@ -69,8 +101,6 @@ The "info" property is an object that provides additional details pertaining to 
   }
 }
 ```
-
-(More examples will be provided as we expand this object with additional fields.)
 
 ### Applied examples
 
