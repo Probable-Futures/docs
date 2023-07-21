@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Mapbox quick start
+title: Mapbox quick-start
 nav_order: 1
 parent: Maps
 ---
 
-# Mapbox quick start
+# Mapbox quick-start
 
 Start working with Probable Futures maps in less than five minutes with this simple guide.  
 
