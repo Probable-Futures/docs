@@ -9,12 +9,12 @@ parent: Maps
 
 Start working with Probable Futures maps in less than five minutes with this simple guide.  
 
-We will use [Mapbox Studio](studio.mapbox.com) to quickly get started with a Mapbox's excellent visual map editing experience. If you don't have a Mapbox account, you will need to create one to use Mapbox Studio.
+We will use [Mapbox Studio](https://studio.mapbox.com) to quickly get started with a Mapbox's excellent visual map editing experience. If you don't have a Mapbox account, you will need to create one to use Mapbox Studio.
 
 Follow these steps to get started:
 
 1. Download a Mapbox style JSON file from the Probable Futures [map styles folder in Github](https://github.com/Probable-Futures/docs/tree/main/mapStyles).
-2. On the [Mapbox Studio styles page](studio.mapbox.com), click the "New style" button. Then click the "Upload Style" tab.
+2. On the [Mapbox Studio styles page](https://studio.mapbox.com), click the "New style" button. Then click the "Upload Style" tab.
 3. Upload the JSON file you downloaded from the Probable Futures map styles folder in Github.
 4. Finally, click the "Customize" button to view and edit the map.
 

@@ -128,7 +128,6 @@ var requestOptions = {
   method: 'POST',
   headers: headers,
   body: graphql,
-  redirect: 'follow'
 };
 
 fetch("https://graphql.probablefutures.org/graphql", requestOptions)
@@ -175,7 +174,6 @@ var requestOptions = {
   method: 'POST',
   headers: myHeaders,
   body: graphql,
-  redirect: 'follow'
 };
 
 fetch("https://graphql.probablefutures.org/graphql", requestOptions)
