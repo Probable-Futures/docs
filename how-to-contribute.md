@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How to contribute
-nav_order: 5
+nav_order: 6
 ---
 
 # How to contribute to Probable Futures open-source projects
