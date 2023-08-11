@@ -16,6 +16,14 @@ Climate models are created and maintained by scientific institutions around the 
 
 These institutions make their models available for download. Organizations that do climate model work, including those you may have heard of like the IPCC, analyze the models to produce predictions about future climate and weather which are often published in long written reports with charts, maps, and graphs. Although climate models have technically been publicly available for a long time, analyzing and interpreting them directly requires so much specialized climate science knowledge that few people outside of climate scientists have actually done so. Probable Futures makes climate models available and accessible to anyone, anywhere. [See "Who makes climate models?" on the Science page for more](https://probablefutures.org/science/climate-models/).
 
+#### How we get it
+Probable Futures has a climate science partner called [Woodwell Climate Research Center](https://www.woodwellclimate.org/). Researchers at Woodwell download the data on servers hosted by the institutions mentioned above and create maps which they share with Probable Futures.
+
+#### How we bring it online
+The maps created by Woodwell are in a format commonly used for climate data called NetCDF. Because NetCDF files are not web-ready, we built a parser to read these files, process and format the data inside, and feed the datasets into our database. After that we create GeoJSON files which we use to create tilesets and styles using the Mapbox tiling service.
+
+To learn more about tilesets, read the [tilesets page](/tilesets/md).
+
 ## About the Data in Probable Futures Maps
 ### Range of Expected Values
 
@@ -47,12 +55,6 @@ When creating these maps, we realized the range of values sometimes formed a nor
 - Maps of precipitation use median
 - Maps of dryness vary: the two maps of drought use average and the map of wildfire and water balance use median
 - The climate zones map uses average
-
-#### How we get it
-Probable Futures has a climate science partner called [Woodwell Climate Research Center](https://www.woodwellclimate.org/). Researchers at Woodwell download the data on servers hosted by the institutions mentioned above and create maps which they share with Probable Futures.
-
-#### How we bring it online
-The maps created by Woodwell are in a format commonly used for climate data called NetCDF. Because NetCDF files are not web-ready, we built a parser to read these files, process and format the data inside, and feed the datasets into our database. After that we create GeoJSON files which we use to create tilesets and styles using the Mapbox tiling service.
 
 ## Examples of applications of the data
 
