@@ -28,10 +28,6 @@ The maps created by Woodwell are in a format commonly used for climate data call
 
 To learn more about tilesets, read the [tilesets page](/tilesets/md).
 
-## Examples of applications of the data
-
-Examples of how the data can be visualized as maps may be seen in the public maps application located at [probablefutures.org/maps](https://probablefutures.org/maps).
-
 ## Further reading
 
 To learn more about climate models in general and the Probable Futures maps in particular, please visit [the Science page](https://probablefutures.org/science/) on probablefutures.org.
