@@ -7,10 +7,7 @@ parent: API
 
 # API access
 
-To access the API, you will need credentials. Someone on the Probable Futures team will share these with you in a secure way that works for your team. We expect you to store these credentials in a secure location appropriate for storing secrets such as a password manager.
-
--   ID
--   Secret
+Credentials are required to use the API but we are happy to share credentials with anyone. To request access, please [fill out this form](https://airtable.com/shrOMfMgh7EoHajKN). We will get back to you quickly. Someone on the Probable Futures team will share these with you in a secure way that works for your team. We expect you to store these credentials in a secure location appropriate for storing secrets such as a password manager. The credentials are a client ID and client secret. 
 
 ## Request an access token
 
