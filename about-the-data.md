@@ -7,9 +7,11 @@ parent: Probable Futures Data
 
 # About the Probable Futures data
 
-All resources described in these docs refer to different ways of accessing or visualizing the same underlying data which are global maps of modeled climate conditions in different scenarios. To see how they look and work, check out the maps on the [Probable Futures website](https://probablefutures.org/maps). By understanding the warming scenarios in these data and maps, anyone can see the climate changes happening now and soon, prepare for the futures that are likely, and work to avoid the ones that carry the most profound risks for our world.
+All resources described in these docs refer to different ways of accessing or visualizing the same underlying data. These data are global maps of modeled climate conditions in different scenarios.
 
-The maps on the Probable Futures website demonstrate one way of visualizing the underlying datasets. The data can be viewed, explored, and probed in many ways. The contents of these docs describe some of the ways.
+To see how they look and work when visualized as maps, check out the maps on the [Probable Futures website](https://probablefutures.org/maps). By understanding the warming scenarios in these data and maps, anyone can see the climate changes happening now and soon, prepare for the futures that are likely, and work to avoid the ones that carry the most profound risks for our world.
+
+The maps on the Probable Futures website demonstrate one way of visualizing the underlying datasets. The data can be viewed, explored, and probed in many ways. The contents of these docs describe some of the ways and offer opportunities to integrate the maps and data into any website, application, article, or workflow.
 
 ## Journey of the data
 
