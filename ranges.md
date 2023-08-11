@@ -1,8 +1,8 @@
 ---
 layout: default
-title: About the data
+title: Ranges of outcomes
 nav_order: 3
-has_children: false
+parent: Probable Futures Data
 ---
 
 # Ranges of outcomes

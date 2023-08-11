@@ -2,7 +2,7 @@
 layout: default
 title: About the data
 nav_order: 1
-has_children: false
+parent: Probable Futures Data
 ---
 
 # About the Probable Futures data
