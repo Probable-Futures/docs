@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Understanding climate scenarios
-nav_order: 1
+nav_order: 2
 parent: Probable Futures Data
 ---
 
