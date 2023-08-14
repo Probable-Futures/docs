@@ -2,7 +2,7 @@
 layout: default
 title: Understanding climate scenarios
 nav_order: 2
-parent: Probable Futures Data
+parent: Background
 ---
 
 ## Understanding climate scenarios

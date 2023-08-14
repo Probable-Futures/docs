@@ -2,7 +2,7 @@
 layout: default
 title: Ranges of outcomes
 nav_order: 3
-parent: Probable Futures Data
+parent: Background
 ---
 
 # Ranges of outcomes
