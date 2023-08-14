@@ -7,7 +7,7 @@ nav_order: 1
 # Probable Futures Developer Documentation
 Welcome! These docs describe how to use the Probable Futures developer resources which include the Probable Futures maps, tilesets, API, raw data, and more.
 
-## Expected background
+## Prerequisite 
 
 Before creating anything with Probable Futures data or maps, we strongly recommend reading, or listening to the audio version of, all three volumes on [probablefutures.org](https://probablefutures.org/): Heat, Water, and Land. These volumes provide essential context for creating applications using Probable Futures maps and data. If you have not read or listened to the volumes and are ready to begin, start with the first section: [Stability and the Heat Volume](https://probablefutures.org/stability).
 
