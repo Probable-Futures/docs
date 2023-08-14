@@ -2,7 +2,7 @@
 layout: default
 title: Ranges of outcomes
 nav_order: 3
-parent: Background
+parent: Data background
 ---
 
 # Ranges of outcomes

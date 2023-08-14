@@ -2,7 +2,7 @@
 layout: default
 title: Understanding climate scenarios
 nav_order: 2
-parent: Background
+parent: Data background
 ---
 
 ## Understanding climate scenarios
