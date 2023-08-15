@@ -9,9 +9,12 @@ parent: Maps
 
 Probable Futures maps are made up of Mapbox tilesets. A Mapbox tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at up to 22 preset zoom levels. Probable Futures tilesets are vector and start at zoom level 2.
 
-Probable Futures tilesets can be used to create maps in your own application. To see a complete list of tileset IDs for Probable Futures maps, please see the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=254758432).
+To learn more about Mapbox tilesets, please see [Mapbox's Tiling Service page](https://www.mapbox.com/mts).
 
-To learn more about Mapbox tilesets, please see [Mapbox's Mapbox Tiling Service page](https://www.mapbox.com/mts).
+## Tileset IDs
+Probable Futures tilesets can be used to create maps in your own application. To find tilesets for the map(s) you would like to use, you will need the [Mapbox tileset IDs](https://docs.mapbox.com/help/glossary/tileset-id/) for the map(s).
+
+The full list of tileset IDs for Probable Futures maps are located in the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=2095694025).
 
 {: .note }
 Every Probable Futures map is made up of two tilesets and each tileset is composed of many layers we call regions. To learn more about tileset structure, skip to the [tileset structure](/tilesets.md#tileset-structure) section.
