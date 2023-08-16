@@ -35,3 +35,5 @@ When creating these maps, we realized the range of values sometimes formed a nor
 - Maps of precipitation use median
 - Maps of dryness vary: the two maps of drought use average and the map of wildfire and water balance use median
 - The climate zones map uses average
+
+To see the full list of the percentiles used for each map, please see the [Low-Mid-High Values tab in the Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=180787380). 
