@@ -12,7 +12,7 @@ The following terms are important to know and understand when working with Proba
 
 **Grid Cells**: To make [climate models](https://probablefutures.org/science/climate-models/), climate scientists divide the world on a grid and model the climate within each grid cell with a given climate scenario. The size of these grid cells determines the resolution of maps made with the model: smaller grid cells, higher resolution. Probable Futures maps have a resolution of 0.2° latitude and longitude per side of each grid cell which is approximately the size of a typical city’s metro area, or about 22km squared. This is the highest resolution data we offer because higher resolutions have diminishing returns: if there is a drought in one 22km area, there is also a drought in the 22km area next to it. [Read more about the data](/probable-futures-data#journey-of-the-data.md).
 
-**Statistical Percentiles & Range of Values**: Every grid cell in every Probable Futures map contains a low, mid, and high value.  
+**Statistical Percentiles & Range of Values**: Every grid cell in every Probable Futures map contains a low, mid, and high value.
 
 | PF Value | Percentile Value| Explanation |
 | ---------| ----------------| ------------|
