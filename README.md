@@ -89,3 +89,16 @@ This will start the Jekyll server with live-reloading enabled, allowing you to v
 ---
 
 That's it! You should now be able to access the local version of the docs at `http://localhost:4000/` or the URL provided in your terminal.
+
+## Contributing
+
+Bug reports, proposals of new features, and pull requests are welcome on GitHub at https://github.com/just-the-docs/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+### Submitting code changes:
+
+- Submit an [Issue](https://github.com/probablefutures/docs/issues) that motivates the changes, using the appropriate template
+- Discuss the proposed changes with other users and the maintainers
+- Open a [Pull Request](https://github.com/probablefutures/docs/pulls)
+- Ensure all CI tests pass
+- Provide instructions to check the effect of the changes
+- Await code review
