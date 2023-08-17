@@ -6,5 +6,4 @@
 _site
 Gemfile.lock
 node_modules
-Gemfile
-*.DS_Store
+.DS_Store

@@ -5,7 +5,7 @@ nav_order: 1
 parent: Data background
 ---
 
-# About the Probable Futures data
+# About the Probable Futures data 1
 
 All resources described in these docs refer to different ways of accessing or visualizing the same underlying data. These data are global maps of modeled climate conditions in different scenarios.
 
