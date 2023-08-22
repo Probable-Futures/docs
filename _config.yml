@@ -31,11 +31,6 @@ aux_links:
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
-# External navigation links
-# nav_external_links:
-#   - title: Just the Docs on GitHub
-#     url: https://github.com/just-the-docs/just-the-docs
-
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
@@ -111,8 +106,6 @@ heading_anchors: true
 # Sort order for navigation links
 # nav_sort: case_insensitive # default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
-
-# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 
 plugins:
   - jekyll-seo-tag
