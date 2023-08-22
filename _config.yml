@@ -114,15 +114,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 
-# Google Analytics Tracking (optional)
-# Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")
-# Note: the main Just the Docs site does *not* use Google Analytics.
-# ga_tracking: UA-2709176-10,G-5FG1HLH3XQ
-# ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
-
 plugins:
   - jekyll-seo-tag
-  - jekyll-github-metadata
 
 kramdown:
   syntax_highlighter_opts:
