@@ -1,7 +1,7 @@
 # Docs
 Welcome to the developer resources and documentation for Probable Futures data and maps. This documentation is currently in its alpha testing phase.
 
-**Public Documentation**: [Probable Futures Documentation](https://probable-futures.github.io/docs/)
+**Public Documentation**: [Probable Futures Documentation](https://docs.probablefutures.org/)
 
 ---
 

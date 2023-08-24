@@ -5,7 +5,7 @@ nav_order: 1
 parent: Data background
 ---
 
-# About the Probable Futures data 1
+# About the Probable Futures
 
 All resources described in these docs refer to different ways of accessing or visualizing the same underlying data. These data are global maps of modeled climate conditions in different scenarios.
 
@@ -28,7 +28,7 @@ Probable Futures has a climate science partner called [Woodwell Climate Research
 #### How we bring it online
 The maps created by Woodwell are in a format commonly used for climate data called NetCDF. Because NetCDF files are not web-ready, we built a parser to read these files, process and format the data inside, and feed the datasets into our database. After that we create GeoJSON files which we use to create tilesets and styles using the Mapbox tiling service.
 
-To learn more about tilesets, read the [tilesets page](/tilesets/md).
+To learn more about tilesets, read the [tilesets page](/tilesets.md).
 
 ## Further reading
 
