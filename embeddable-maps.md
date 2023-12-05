@@ -16,7 +16,7 @@ Available for all Probable Futures maps at all six warming scenarios, embeddable
 
 ## How to use embeddable maps
 
-1. Go to [probablefutures.org/maps](probablefutures.org/maps).
+1. Go to [probablefutures.org/maps](https://probablefutures.org/maps).
 2. Navigate the map to a place in the world that you would like to show in the embeddable map.
 3. Click the download button on the top right.
 4. Select "Download as embeddable map" or "Download as embeddable comparison map". If selecting a standard embeddable map, the warming scenario you are viewing will be shown in the embeddable map. If selecting a comparison map, choose the warming scenarios you would like to include in the embeddable map in the next step.
