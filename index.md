@@ -4,8 +4,8 @@ title: Home
 nav_order: 1
 ---
 
-# Probable Futures Developer Documentation
-Welcome! These docs describe how to use the Probable Futures developer resources which include the Probable Futures maps, tilesets, API, raw data, and more.
+# Probable Futures Open Data Documentation
+Welcome! This documentation describes how to access and use Probable Futures data and developer resources which include the Probable Futures maps, tilesets, API, raw data, and more.
 
 ## Prerequisite
 
