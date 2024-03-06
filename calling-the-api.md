@@ -40,6 +40,7 @@ mutation {
         latitude
         longitude
         info
+        mapCategory
     }
   }
 }
@@ -59,6 +60,7 @@ The response of the API includes a list of objects that has the following proper
 -   longitude
 -   latitude
 -   info
+-   mapCategory ("heat", "water", "land", "other")
 
 Some or all the fields can be selected to be part of the response.
 
@@ -77,7 +79,8 @@ Some or all the fields can be selected to be part of the response.
           "warmingScenario": "1.5",
           "latitude": 40.8,
           "longitude": -74,
-          "info": {}
+          "info": {},
+          mapCategory: "heat"
         }
       ]
     }
