@@ -1,9 +1,10 @@
 ---
 layout: default
 title: Definitions
-nav_order: 5
+nav_order: 6
 ---
-## Definitions
+# Definitions
+
 The following terms are important to know and understand when working with Probable Futures maps and data.
 
 **Probable Futures maps and data**: Probable Futures maps and data refer to different ways of viewing or interacting with the same datasets, which are climate model datasets. When they are visualized geographically, we refer to them as maps. When they are viewed as numbers, we refer to them as data. They make the most sense when viewed as maps because they are maps of global climate data in different scenarios, so by default we typically refer to them as maps. See the full list of maps on the [Maps](/maps.md) page or read more about the data on the [Probable Futures Data](/about-the-data.md) page.
@@ -21,7 +22,5 @@ The following terms are important to know and understand when working with Proba
 | High     | 95th | Conditions like these should be expected approximately 5% of the time during the given warming scenario. Higher values could also occur in this warming scenario with lower likelihood than this value. For example, in a map of the average temperature, this value would represent a warm year in the location of the grid cell, but not the warmest possible year. |
 
 *See [Note on average and median values](/ranges.md#note-on-average-and-median-values)
-
-
 
 <!-- add map bins and regional climate model definitions here -->
