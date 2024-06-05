@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Embeddable maps
-nav_order: 1
+nav_order: 2
 parent: Use the maps
 ---
 

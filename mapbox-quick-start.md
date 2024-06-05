@@ -2,7 +2,7 @@
 layout: default
 title: Mapbox quick-start
 nav_order: 1
-parent: Maps
+parent: Use the maps
 ---
 
 # Mapbox quick-start
