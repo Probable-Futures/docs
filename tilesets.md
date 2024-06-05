@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tilesets
-nav_order: 3
+nav_order: 2
 parent: Maps
 ---
 
@@ -12,6 +12,7 @@ Probable Futures maps are made up of Mapbox tilesets. A Mapbox tileset is a coll
 To learn more about Mapbox tilesets, please see [Mapbox's Tiling Service page](https://www.mapbox.com/mts).
 
 ## Tileset IDs
+
 Probable Futures tilesets can be used to create maps in your own application. To find tilesets for the map(s) you would like to use, you will need the [Mapbox tileset IDs](https://docs.mapbox.com/help/glossary/tileset-id/) for the map(s).
 
 The full list of tileset IDs for Probable Futures maps are located in the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=2095694025).
@@ -46,9 +47,11 @@ In the above example, any values of `data_1c_mean` that are less than 1 will be 
 When creating map styles you can also include some of the default layers provided by Mapbox like place labels and geopolitical boundaries.
 
 ## Tileset structure
+
 The Probable Futures tileset structure was designed to accommodate the large amount of data contained within each tileset while still being accessible for anyone who is interested in using the tilesets in their own application, website, or other context.
 
 ### Tilesets and regions
+
 Every Probable Futures map is made up of two tilesets and each tileset is composed of many layers we call regions.
 
 Each map has one tileset for the east (e.g., `probablefutures.40104-east-v3`) with Eurasia, Africa, Australia and one for the west (e.g., `probablefutures.40104-west-v3`) with the Americas.
@@ -58,11 +61,13 @@ There are 24 regions per map: eight for Asia and Oceana (e.g., `region_as_oc_1`)
 Each region is created within a specified bounding box defined by its coordinates. For example, the region with id `region_as_oc_7`, is located in the east tileset and has a bounding box, `bbox = [65.2, -25.8, 180, -10.58]`. These divisions are necessary because Mapbox has size limitations on both tilesets overall and layers within tilesets. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points. Generally, these divisions can be ignored. For example, when creating a map with our [Mapbox quick-start](/mapbox-quick-start.md) guide, details about tileset and layer divisions are abstracted away in the Mapbox style file and need not be understood or modified for most use-cases.
 
 ### Zoom levels
+
 Probable Futures tilesets start at zoom level 2, when zoomed all the way out, and can be zoomed in up to the maximum zoom level of 22. Zoom levels 0 and 1 are omitted from Probable Futures tilesets because the large number of data points in each tile do not fit in the smaller number of tiles present in Mapbox tilesets at zoom levels 0 and 1.
 
 Since Probable Futures maps have a resolution of 0.2° latitude and longitude, zooming beyond zoom level 10 begins to show only one of the 0.2° squares and is therefore typically not useful, but is doable if desired.
 
 ### Data coverage and special values
+
 Probable Futures maps contain climate data for most land on Earth but do not cover parts of the Arctic and Antarctic and remote islands. This is because the data comes from CORDEX-CORE framework, a standardization for regional climate model output. To learn more about where the data comes from, visit the [Science page](https://probablefutures.org/science/our-maps/).
 
 We also choose to omit data in deserts for our maps of drought, wildfire, and water balance because these areas are already consistently dry. These dry lands are noted in tilesets with a special value: `-88888`.
