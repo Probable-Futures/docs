@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Use The Maps
+title: Use the maps
 nav_order: 4
 has_children: true
 ---

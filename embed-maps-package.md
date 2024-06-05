@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Embed Maps Package
+title: Embeddable maps package
 nav_order: 2
-parent: Use The Maps
+parent: Use the maps
 ---
 
 # @probable-futures/probable-futures-maps

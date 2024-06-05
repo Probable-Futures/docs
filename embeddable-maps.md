@@ -2,7 +2,7 @@
 layout: default
 title: Embeddable maps
 nav_order: 1
-parent: Use The Maps
+parent: Use the maps
 ---
 
 # Embeddable maps

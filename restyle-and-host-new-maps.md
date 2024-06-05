@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Restyle And Host New Maps
+title: Restyle and host new maps
 nav_order: 3
-parent: Use The Maps
+parent: Use the maps
 ---
 
 
