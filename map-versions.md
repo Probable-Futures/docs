@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Map versions
-nav_order: 3
-parent: Maps
+nav_order: 2
+parent: Maps background
 ---
 
 # Map versions
