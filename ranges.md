@@ -5,7 +5,7 @@ nav_order: 3
 parent: Data background
 ---
 
-# Ranges of outcomes
+## Ranges of outcomes
 
 Probable Futures maps contain low, mid, and high values for each location and warming scenario. You can think of these values as a range. People must be prepared for the full range in the same way we all must be prepared for a range of weather. In other words, this range can be thought of as potential outcomes in any given year in the specified warming scenario for the specified location.
 
@@ -25,15 +25,17 @@ As you can see by clicking on Delhi in the map linked above, Delhi with a climat
 
 If the warming scenario numbers increase from 1.5°C above pre-industrial to 1.6°C, 1.7°C and eventually 2°C, the range shifts warmer again. If you click the 2°C tab, you will see the range of expected values in Delhi has shifted. In this 2°C scenario, the low, mid and high number of days above 32°C is 195, 232, and 269. You can think of this as a bell curve of values shifting to the right, toward the warmer side of a graph of temperatures in a place. Often the shape of the bell curve changes as it shifts.
 
--   `low`: This is the low value in the range. These conditions should be expected approximately 5% of the time.
--   `mid`: This is the average or median condition. Conditions near this value should be expected in a typical year.
--   `high`: This is the high value in the range. These conditions should be expected approximately 5% of the time.
+- `low`: This is the low value in the range. These conditions should be expected approximately 5% of the time.
+- `mid`: This is the average or median condition. Conditions near this value should be expected in a typical year.
+- `high`: This is the high value in the range. These conditions should be expected approximately 5% of the time.
 
-## Note on average and median values
+### Note on average and median values
+
 When creating these maps, we realized the range of values sometimes formed a normal distribution and other times skewed toward the tail. To provide reliable expected mid values, we chose to use median on maps that tend to have ranges with long tails.
+
 - Maps of temperature use average
 - Maps of precipitation use median
 - Maps of dryness vary: the two maps of drought use average and the map of wildfire and water balance use median
 - The climate zones map uses average
 
-To see the full list of the percentiles used for each map, please see the [Low-Mid-High Values tab in the Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=180787380). 
+To see the full list of the percentiles used for each map, please see the [Low-Mid-High Values tab in the Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=180787380).

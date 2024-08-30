@@ -5,7 +5,7 @@ nav_order: 2
 parent: Use the maps
 ---
 
-# Embeddable maps
+## Embeddable maps
 
 With embeddable maps, anyone can easily embed any Probable Futures map in a website without touching a single line of code.
 

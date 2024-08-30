@@ -5,25 +5,29 @@ nav_order: 2
 parent: API
 ---
 
-# Calling the API
+## Calling the API
 
 The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
 1. Location data, in any of the following formats (required)
--   `longitude`: Type: number. Valid longitudes should be between -180 and 180.
--   `latitude`: Type: number. Valid latitudes should be between -90 and 90.
--   `country`: Generally recognized countries or country codes. Type: string. Example: "France" or "fr". Can be sent alone or with city and/or address.
--   `city`: Cities, villages, municipalities. Type: string. Should be sent with a country and/or address.
--   `address`: Any place name, postal addresses, individual residential or business addresses. Type: string. Can be sent alone or with city and/or country.
+
+- `longitude`: Type: number. Valid longitudes should be between -180 and 180.
+- `latitude`: Type: number. Valid latitudes should be between -90 and 90.
+- `country`: Generally recognized countries or country codes. Type: string. Example: "France" or "fr". Can be sent alone or with city and/or address.
+- `city`: Cities, villages, municipalities. Type: string. Should be sent with a country and/or address.
+- `address`: Any place name, postal addresses, individual residential or business addresses. Type: string. Can be sent alone or with city and/or country.
 
 2. Warming scenario (optional)
--   `warmingScenario`: Specifies the warming scenario. Type: string or string array. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0". eg. ["1", "2.5"]. If omitted, all 6 warming scenarios will be returned.
+
+- `warmingScenario`: Specifies the warming scenario. Type: string or string array. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0". eg. ["1", "2.5"]. If omitted, all 6 warming scenarios will be returned.
 
 3. Dataset ID (optional)
--   `datasetId`: ID of the dataset requested, of type integer. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](./maps.md) page.
 
-#### Example request
-```
+- `datasetId`: ID of the dataset requested, of type integer. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](./maps.md) page.
+
+### Example request
+
+```js
 mutation {
   getDatasetStatistics(input: {
         country: "USA"
@@ -46,27 +50,27 @@ mutation {
 }
 ```
 
-## Responses
+### Responses
 
 The response of the API includes a list of objects that has the following properties:
 
--   datasetId
--   highValue
--   lowValue
--   midValue
--   name
--   unit
--   warmingScenario
--   longitude
--   latitude
--   info
--   mapCategory ("heat", "water", "land", "other")
+- datasetId
+- highValue
+- lowValue
+- midValue
+- name
+- unit
+- warmingScenario
+- longitude
+- latitude
+- info
+- mapCategory ("heat", "water", "land", "other")
 
 Some or all the fields can be selected to be part of the response.
 
-#### Example response:
+### Example response
 
-```
+```js
 {
   "data": {
     "getDatasetStatistics": {
@@ -90,7 +94,7 @@ Some or all the fields can be selected to be part of the response.
 
 The "info" property is an object that provides additional details related to the query, if there any, such as for the climate zones dataset. Here is an example of the "info" property displaying the name of the climate zone that is expected in a 1.0°C warming scenario:
 
-```
+```js
 {
   "datasetId": 40901,
   "midValue": "33.0",
@@ -109,7 +113,7 @@ The "info" property is an object that provides additional details related to the
 
 Calling the API using cURL with lon and lat:
 
-```
+```bash
 curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
 --header 'Authorization: Bearer ACCESS_TOKEN_HERE' \
 --header 'Content-Type: application/json' \
@@ -118,7 +122,7 @@ curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
 
 Calling the API in JavaScript with lon and lat:
 
-```
+```js
 var headers = new Headers();
 headers.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
 headers.append("Content-Type", "application/json");
@@ -141,7 +145,7 @@ fetch("https://graphql.probablefutures.org/graphql", requestOptions)
 
 Calling the API in Python with lon and lat:
 
-```
+```py
 headers = {
     "Content-Type": "application/json",
     "Authorization": "Bearer " + ACCESS_TOKEN_HERE
@@ -155,7 +159,7 @@ response = requests.post('https://graphql.probablefutures.org/graphql', headers=
 
 Calling the API using cURL with address and country:
 
-```
+```bash
 curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
 --header 'Authorization: Bearer {ACCESS_TOKEN_HERE}' \
 --header 'Content-Type: application/json' \
@@ -164,7 +168,7 @@ curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
 
 Calling the API in JavaScript with address and country:
 
-```
+```js
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
 myHeaders.append("Content-Type", "application/json");
@@ -187,7 +191,7 @@ fetch("https://graphql.probablefutures.org/graphql", requestOptions)
 
 Calling the API in Python with address and country:
 
-```
+```js
 headers = {
     "Content-Type": "application/json",
     "Authorization": "Bearer " + ACCESS_TOKEN_HERE

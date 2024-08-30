@@ -5,7 +5,7 @@ nav_order: 1
 parent: API
 ---
 
-# API access
+## API access
 
 Credentials are required to use the API but we are happy to share credentials with anyone. To request access, please [fill out this form](https://airtable.com/shrOMfMgh7EoHajKN). We will get back to you quickly. Someone on the Probable Futures team will share these with you in a secure way that works for your team. We expect you to store these credentials in a secure location appropriate for storing secrets such as a password manager. The credentials are a client ID and client secret.
 
@@ -17,7 +17,7 @@ Below are examples of how to call the authorization API to obtain access tokens.
 
 - **Using JavaScript**:
 
-```
+```js
   const username =
     'CLIENT_ID_HERE';
   const password =
@@ -54,7 +54,7 @@ Below are examples of how to call the authorization API to obtain access tokens.
 
 - **Using Python**:
 
-```
+```py
 import requests
 import base64
 
