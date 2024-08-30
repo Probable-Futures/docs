@@ -5,7 +5,7 @@ nav_order: 1
 parent: Maps background
 ---
 
-# Tilesets
+## Tilesets
 
 Probable Futures maps are made up of Mapbox tilesets. A Mapbox tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at up to 22 preset zoom levels. Probable Futures tilesets are vector and start at zoom level 2.
 
@@ -24,7 +24,7 @@ Every Probable Futures map is made up of two tilesets and each tileset is compos
 
 After creating the tileset, we create a map style which is compatible with Mapbox and can be displayed in the browser. This Mapbox style is a document that defines the visual appearance of a map: what data to draw, the order to draw it in, and how to style the data when drawing it. A style document is a JSON object with specific root level and nested properties. This specification defines and describes these properties. For example, in one part of this JSON object, you can specify the bins and colors to use based on the data that exists in the tileset. You can specify an attribute, such as `data_1c_mean`, and then specify what colors to use at different values of this attribute. This can be done using Mapbox expressions like this:
 
-```
+```js
 [
     "step",
     ["get", "data_1c_mean"],

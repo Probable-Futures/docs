@@ -5,7 +5,7 @@ nav_order: 3
 parent: Use the maps
 ---
 
-# @probable-futures/probable-futures-maps
+## @probable-futures/probable-futures-maps
 
 This package empowers developers to seamlessly integrate dynamic and interactive climate maps into their web applications.
 

@@ -3,7 +3,7 @@ layout: default
 title: Definitions
 nav_order: 6
 ---
-# Definitions
+## Definitions
 
 The following terms are important to know and understand when working with Probable Futures maps and data.
 

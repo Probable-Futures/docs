@@ -6,13 +6,13 @@ parent: Use the maps
 ---
 
 
-# Restyle and customize the maps
+## Restyle and customize the maps
 
-The Probable Futures maps are made of data encoded in [tilesets](/tilesets.md) and styled to apply color and bins. Bins are the groups of colors you see in the map key. They are defined by the number at which one color stops and another starts. For example in the [Days above 32°C (90°F) map](https://probablefutures.org/maps/?selected_map=days_above_32c), the first bin starts and stops at 0 and uses a gray color. The second bin starts at 1, stops at 7, and uses a green color. The third bin starts at 8, stops at 30, and uses a dark blue color. 
+The Probable Futures maps are made of data encoded in [tilesets](/tilesets.md) and styled to apply color and bins. Bins are the groups of colors you see in the map key. They are defined by the number at which one color stops and another starts. For example in the [Days above 32°C (90°F) map](https://probablefutures.org/maps/?selected_map=days_above_32c), the first bin starts and stops at 0 and uses a gray color. The second bin starts at 1, stops at 7, and uses a green color. The third bin starts at 8, stops at 30, and uses a dark blue color.
 
 We publish our custom [map styles](/tilesets/#map-styles) for all our maps, primarily for users who wish to customize the map designs according to their own preferences.
 
-## How to restyle and customize the maps
+### How to restyle and customize the maps
 
 1. Choose and download the map style json you want from [https://github.com/Probable-Futures/docs/tree/main/mapStyles/v3-styles](https://github.com/Probable-Futures/docs/tree/main/mapStyles/v3-styles)
 2. Sign in to or sign up for a [Mapbox account](https://account.mapbox.com/auth/signin/)

@@ -5,11 +5,11 @@ nav_order: 3
 has_children: true
 ---
 
-# The maps
+## The maps
 
 The Probable Futures maps are climate model data displayed as [Mapbox tilesets](/tilesets.md) with a resolution of 0.2° latitude/longitude per grid cell side. To learn more about climate models and the specific models Probable Futures uses, please see [About the data](/about-the-data.md) and [the Science page](https://probablefutures.org/science/) on probablefutures.org.
 
-## All maps
+### All maps
 
 Below is a list of all maps currently published on [probablefutures.org/maps](https://probablefutures.org/maps). To see this list in a spreadsheet with additional metadata such as map units, tileset IDs, climate model information, and technical descriptions, please see the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=254758432).
 
@@ -46,6 +46,6 @@ Below is a list of all maps currently published on [probablefutures.org/maps](ht
 | [Change in wildfire danger days](https://probablefutures.org/maps/?selected_map=change_in_wildfire_danger_days&map_version=latest&volume=land&warming_scenario=1#2.2/0/0)                                 | 40704 | Dryness           |
 | [Climate zones](https://probablefutures.org/maps/?selected_map=climate_zones&map_version=latest&volume=other&warming_scenario=1#2.2/0/0)                                                                  | 40901 | Other             |
 
-## Why these maps?
+### Why these maps?
 
 Our process for creating maps involves considering particular phenomena and thresholds that matter to people and civilization. For example, nights above 20°C (68°F) are not comfortable for sleeping without air conditioning. All wet-bulb temperatures below carry some risk to human health for anyone working or playing outdoors. Loss of frost and freezing allow spread of pathogens. Increased precipitation and more severe and frequent storms require more infrastructure to hold and manage rainwater to prevent flooding. Now we welcome you to think of other examples and create tools using these maps. Tools using these maps can help communities, governments, businesses, and individuals prepare for the climate futures that are likely, and work to avoid the ones that carry the most profound risks for our world. We also welcome feedback about these maps and ideas for others.
