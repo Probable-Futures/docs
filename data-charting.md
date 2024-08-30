@@ -36,7 +36,7 @@ At Arizona, experiencing up to 90 days above 32°C has a chance of 67%. Experien
 
 You may have noticed that some values inside the `x` array are repeated, eg. `57` at indexes 4 and 5. What you can do in this case is to re-create the `x` and `y` in a way that if one x value has multiple likelihood values, select only one point(x, y) such that y is the max likelihood for x.
 
-You can use this code that we already use in the [Factbook](factbook.probablefutures.org).
+You can use this code that we already use in the [Factbook](https://factbook.probablefutures.org).
 
 ```js
 const selectMaxYForX = (stat => {
