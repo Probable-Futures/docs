@@ -19,7 +19,7 @@ The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/gr
 
 2. Warming scenario (optional)
 
-- `warmingScenario`: Specifies the warming scenario. Type: string or string array. Should be one of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0". eg. ["1", "2.5"]. If omitted, all 6 warming scenarios will be returned.
+- `warmingScenario`: Specifies the warming scenario. Type: string or string array. Should be one or more of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0". For example, ["1", "2.5"]. If omitted, all 6 warming scenarios will be returned.
 
 3. Dataset ID (optional)
 
@@ -65,8 +65,12 @@ The response of the API includes a list of objects that has the following proper
 - latitude
 - info
 - mapCategory ("heat", "water", "land", "other")
+- x
 
-Some or all the fields can be selected to be part of the response.
+Some or all the fields can be requested to be part of the response.
+
+{: .note }
+`x` contains 101 variables corresponding to the precentiles from 0 (the minimum) to 100 (the maximum). Read more about [Statistical Percentiles & Range of Values](/definitions). These values can specifically be used to draw charts like plot charts showing the chance of experiencing a sepcific outcome or range of outcomes. To understand this varibable a bit more and see examples of ways to draw these charts read about [Data Charting](/data-charting).
 
 ### Example response
 
