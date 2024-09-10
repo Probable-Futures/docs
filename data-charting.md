@@ -5,7 +5,7 @@ nav_order: 3
 parent: API
 ---
 
-## Data charting
+## Implementing charts from scratch
 
 For context, please read [Calling the API page](/calling-the-api) before going through this page.
 
@@ -51,4 +51,40 @@ const selectMaxYForX = (stat => {
 
     return Array.from(map, ([x, y]) => ({ x, y }));
 };
+```
+
+## Adding charts as a react component
+
+Rather than calling the API and creating your own charts, we've provided a Chart component that you can easily integrate into your React app. To import and use this component, simply follow the steps outlined below:
+
+- Install the [@probable-futures/probable-futures-maps](https://www.npmjs.com/package/@probable-futures/probable-futures-maps) npm package
+- Import the `Chart` component and use it
+
+**Props:**
+
+- **width** (number, required)
+- **height** (number, required)
+- **datasetStats** (StatisticsData[], required): the stats that you receive after calling the PF API to get the climate data of a specific location ([learn more about calling the api](/calling-the-api)).
+Note that you can import that StatisticsData from `@probable-futures/lib`
+- **datasetId** (number, required)
+- **warmingScenario** (number, required) - supported values: `0.5 | 1 | 1.5 | 2 | 2.5 | 3`
+- **hideTitle** (boolean, optional): show or hide the title of the chart
+- **onLineClicked** (Function): this event will fire whenever one of the chart lines is clicked
+
+Example:
+
+```jsx
+import { Chart } from "@probable-futures/probable-futures-maps";
+
+const [selectedChartDegree, setSelectedChartDegree] = useState(0.5);
+
+<Chart
+  width={700}
+  height={400}
+  datasetStats={datasetStats}
+  datasetId={40104}
+  warmingScenario={selectedChartDegree}
+  hideTitle
+  onLineClicked={(degree) => setSelectedChartDegree(degree) }
+/>
 ```

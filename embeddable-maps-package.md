@@ -11,7 +11,7 @@ This package empowers developers to seamlessly integrate dynamic and interactive
 
 ## When should it be used
 
-Depending on your use case, downloading the embeddable maps one by one from the [probablefutures.org](https://probablefutures.org/maps) site my not be ideal. 
+Depending on your use case, downloading the embeddable maps one by one from the [probablefutures.org](https://probablefutures.org/maps) site my not be ideal.
 
 We built this npm package for developers who want to quickly and dynamically integrate the Probable Futures maps into their own web applications.
 
