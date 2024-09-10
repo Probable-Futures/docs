@@ -4,10 +4,10 @@ title: Data charting
 nav_order: 3
 parent: API
 ---
+# Data charting
+For context, please read [Calling the API page](/calling-the-api) before going through this page.
 
 ## Implementing charts from scratch
-
-For context, please read [Calling the API page](/calling-the-api) before going through this page.
 
 Assuming you have already obtained the API credentials and were able to receive an API response with some data for a specific location, you may now also want to create charts with the percentiles that represent the full range of expected weather outcomes for that location in various warming scenarios. As described on the [Calling the API page](/calling-the-api), the variable `x` that you receive from the API contains 101 variables corresponding to the precentiles ranging from 0 to 100. Below you will find more information on how to use this variable to draw plots.
 
@@ -53,7 +53,7 @@ const selectMaxYForX = (stat => {
 };
 ```
 
-## Adding charts as a react component
+## Adding charts as a React component
 
 Rather than calling the API and creating your own charts, we've provided a Chart component that you can easily integrate into your React app. To import and use this component, simply follow the steps outlined below:
 
@@ -64,7 +64,7 @@ Rather than calling the API and creating your own charts, we've provided a Chart
 
 - **width** (number, required)
 - **height** (number, required)
-- **datasetStats** (StatisticsData[], required): the stats that you receive after calling the PF API to get the climate data of a specific location ([learn more about calling the api](/calling-the-api)).
+- **datasetStats** (StatisticsData[], required): the stats that you receive after calling the API to get the climate data for a specific location ([learn more about calling the API](/calling-the-api)).
 Note that you can import that StatisticsData from `@probable-futures/lib`
 - **datasetId** (number, required)
 - **warmingScenario** (number, required) - supported values: `0.5 | 1 | 1.5 | 2 | 2.5 | 3`
