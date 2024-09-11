@@ -6,7 +6,7 @@ nav_order: 1
 
 ## Probable Futures Open Data Documentation
 
-Welcome! This documentation describes how to access and use Probable Futures data and developer resources which include the Probable Futures maps, tilesets, API, raw data, and more.
+Welcome! This site contains documentation for analysts, data scientists, software engineers, and other data-savvy people interested in exploring or building applications with Probable Futures maps and data. The resources described in this documentation includes the Probable Futures maps, tilesets, API, raw data, and more.
 
 ### Prerequisite
 

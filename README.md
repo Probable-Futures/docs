@@ -1,8 +1,8 @@
-# Docs
+# Probable Futures Open Data Documentation
 
-Welcome to the developer resources and documentation for Probable Futures data and maps. This documentation is currently in its alpha testing phase.
+Documentation for analysts, data scientists, software engineers, and other data-savvy people interested in exploring or building applications with Probable Futures maps and data.
 
-**Public Documentation**: [Probable Futures Documentation](https://docs.probablefutures.org/)
+**Link to documentation site**: https://docs.probablefutures.org/
 
 ---
 
