@@ -65,12 +65,12 @@ The response of the API includes a list of objects that has the following proper
 - latitude
 - info
 - mapCategory ("heat", "water", "land", "other")
-- x
+- values
 
 Some or all the fields can be requested to be part of the response.
 
 {: .note }
-`x` contains 101 variables corresponding to the precentiles from 0 (the minimum) to 100 (the maximum). Read more about [Statistical Percentiles & Range of Values](/definitions). These values can specifically be used to draw charts like plot charts showing the chance of experiencing a sepcific outcome or range of outcomes. To understand this varibable a bit more and see examples of ways to draw these charts read about [Data Charting](/data-charting).
+`values` contains 101 variables corresponding to the precentiles from 0 (the minimum) to 100 (the maximum). Read more about [Statistical Percentiles & Range of Values](/definitions). These values can specifically be used to draw charts like plot charts showing the chance of experiencing a sepcific outcome or range of outcomes. To understand this varibable a bit more and see examples of ways to draw these charts read about [Data Charting](/data-charting).
 
 ### Example response
 
