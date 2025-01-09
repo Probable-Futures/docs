@@ -3,7 +3,7 @@ logo: "/assets/probable-futures-logo-long.svg"
 
 remote_theme: just-the-docs/just-the-docs
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://probable-futures.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://docs.probablefutures.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 
