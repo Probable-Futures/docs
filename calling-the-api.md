@@ -2,7 +2,7 @@
 layout: default
 title: Calling the API
 nav_order: 2
-parent: API
+parent: Data API
 ---
 
 ## Calling the API

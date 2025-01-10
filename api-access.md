@@ -2,7 +2,7 @@
 layout: default
 title: API access
 nav_order: 1
-parent: API
+parent: Data API
 ---
 
 ## API access

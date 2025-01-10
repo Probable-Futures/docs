@@ -1,6 +1,6 @@
 ---
 layout: default
-title: API
+title: Data API
 nav_order: 5
 has_children: true
 ---

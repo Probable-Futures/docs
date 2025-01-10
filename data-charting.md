@@ -2,7 +2,7 @@
 layout: default
 title: Data charting
 nav_order: 3
-parent: API
+parent: Data API
 ---
 # Data charting
 
