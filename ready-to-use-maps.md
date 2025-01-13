@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Ready to use maps
+title: Ready-to-use maps
 nav_order: 2
 parent: Maps API
 ---
 
-## Ready to use maps
+## Ready-to-use maps
 
-With ready to use maps, anyone can easily embed any Probable Futures map in a website. Available for all Probable Futures maps at all six warming scenarios:
+With ready-to-use maps, anyone can easily embed any Probable Futures map in any website or app. Available for all Probable Futures maps and all six warming scenarios as either a single or comparison map, these maps can be downloaded directly or integrated using our maps library. 
 
 ### Embeddable maps - direct download
 
@@ -24,13 +24,13 @@ With ready to use maps, anyone can easily embed any Probable Futures map in a we
 
 We built this npm package for developers who want to quickly and dynamically integrate the Probable Futures maps into their own web applications.
 
-This package offers ready to use react components used to render the probable futures maps based on a variety of props.
+This package offers ready-to-use react components used to render the probable futures maps based on a variety of props.
 
 Learn more about this package and find installation instruction in [the npm registry](https://www.npmjs.com/package/@probable-futures/probable-futures-maps).
 
 ## Use cases
 
-These ready to use maps can be used to:
+These ready-to-use maps can be used to:
 
 - Add clear and compelling visual maps of our changing climate to any website, article, story, or app
 - Show any place in the world, at any zoom level
