@@ -28,6 +28,4 @@ Below are examples of how to call the authorization API to obtain access tokens.
   </div>
 </div>
 
-<br />
-
 **Note:** Make sure to set the correct client credentials before using the API.
