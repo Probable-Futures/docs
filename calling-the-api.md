@@ -115,94 +115,40 @@ The "info" property is an object that provides additional details related to the
 
 ### Applied examples
 
-Calling the API using cURL with lon and lat:
+Calling the API with lon and lat:
 
-```bash
-curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
---header 'Authorization: Bearer ACCESS_TOKEN_HERE' \
---header 'Content-Type: application/json' \
---data-raw '{"query":"mutation {\n  getDatasetStatistics(input: {\n        latitude: 40.7,\n        longitude: -73.9,\n        warmingScenario: \"1.5\"\n    }) {\n    datasetStatisticsResponses{\n        datasetId\n        highValue\n        lowValue\n        midValue\n        name\n        unit\n        warmingScenario\n    }\n  }\n}","variables":{}}'
-```
+<div id ="tab-container-1">
+  <div class="tab-container">
+    <div class="tab active" onclick="showTab(event, 'tab1', 'tab-container-1')">cURL</div>
+    <div class="tab" onclick="showTab(event, 'tab2', 'tab-container-1')">JS</div>
+    <div class="tab" onclick="showTab(event, 'tab3', 'tab-container-1')">Python</div>
+  </div>
+  <div id="tab1" class="tab-content active">
+    <zero-md src="/codeSnippets/callingApiLonLatCurl.md"></zero-md>
+  </div>
+  <div id="tab2" class="tab-content">
+    <zero-md src="/codeSnippets/callingApiLonLatJs.md"></zero-md>
+  </div>
+   <div id="tab3" class="tab-content">
+    <zero-md src="/codeSnippets/callingApiLonLatPy.md"></zero-md>
+  </div>
+</div>
 
-Calling the API in JavaScript with lon and lat:
+Calling the API with address and country:
 
-```js
-var headers = new Headers();
-headers.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
-headers.append("Content-Type", "application/json");
-
-var graphql = JSON.stringify({
-  query: "mutation {\n      getDatasetStatistics(\n        input: {longitude: -73.9, latitude: 40.7, warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
-    variables: {}
-});
-var requestOptions = {
-  method: 'POST',
-  headers: headers,
-  body: graphql,
-};
-
-fetch("https://graphql.probablefutures.org/graphql", requestOptions)
-.then(response => response.text())
-.then(result => console.log(result))
-.catch(error => console.log('error', error));
-```
-
-Calling the API in Python with lon and lat:
-
-```py
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": "Bearer " + ACCESS_TOKEN_HERE
-}
-query = {
-    "query": "mutation {\n      getDatasetStatistics(\n        input: {longitude: -73.9, latitude: 40.7, warmingScenario: \"1.0\", datasetId: 40104}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n      }\n    }\n  }",
-    "variables": {}
-}
-response = requests.post('https://graphql.probablefutures.org/graphql', headers=headers, json=query)
-```
-
-Calling the API using cURL with address and country:
-
-```bash
-curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
---header 'Authorization: Bearer {ACCESS_TOKEN_HERE}' \
---header 'Content-Type: application/json' \
---data-raw '{"query":"mutation {\n      getDatasetStatistics(\n        input: {country: \"us\", address: \"121 East 48th Street, Apt. 123, New York, NY 10001\", warmingScenario: \"1.5\", datasetId: null}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n          longitude\n          latitude\n      }\n    }\n}","variables":{}}'
-```
-
-Calling the API in JavaScript with address and country:
-
-```js
-var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
-myHeaders.append("Content-Type", "application/json");
-
-var graphql = JSON.stringify({
-  query: "mutation {\n      getDatasetStatistics(\n        input: {country: \"us\", address: \"121 East 48th Street, Apt. 123, New York, NY 10001\", warmingScenario: \"1.5\", datasetId: null}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n          longitude\n          latitude\n      }\n    }\n}",
-  variables: {}
-})
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: graphql,
-};
-
-fetch("https://graphql.probablefutures.org/graphql", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-```
-
-Calling the API in Python with address and country:
-
-```js
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": "Bearer " + ACCESS_TOKEN_HERE
-}
-query = {
-    "query": "mutation {\n      getDatasetStatistics(\n        input: {country: \"us\", address: \"121 East 48th Street, Apt. 123, New York, NY 10001\", warmingScenario: \"1.5\", datasetId: null}\n      ) {\n        datasetStatisticsResponses {\n          datasetId\n          highValue\n          lowValue\n          midValue\n          name\n          unit\n          warmingScenario\n          longitude\n          latitude\n      }\n    }\n}",
-    "variables": {}
-}
-response = requests.post('https://graphql.probablefutures.org/graphql', headers=headers, json=query)
-```
+<div id ="tab-container-2">
+  <div class="tab-container">
+    <div class="tab active" onclick="showTab(event, 'tab4', 'tab-container-2')">cURL</div>
+    <div class="tab" onclick="showTab(event, 'tab5', 'tab-container-2')">JS</div>
+    <div class="tab" onclick="showTab(event, 'tab6', 'tab-container-2')">Python</div>
+  </div>
+  <div id="tab4" class="tab-content active">
+    <zero-md src="/codeSnippets/callingApiAddressCurl.md"></zero-md>
+  </div>
+  <div id="tab5" class="tab-content">
+    <zero-md src="/codeSnippets/callingApiAddressJs.md"></zero-md>
+  </div>
+   <div id="tab6" class="tab-content">
+    <zero-md src="/codeSnippets/callingApiAddressPy.md"></zero-md>
+  </div>
+</div>

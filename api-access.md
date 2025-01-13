@@ -15,68 +15,19 @@ Using your access credentials, you can request an access token.
 
 Below are examples of how to call the authorization API to obtain access tokens. The access token will expire in 24hrs. The response is a JWT token of type `Bearer`.
 
-- **Using JavaScript**:
+<div id ="tab-container-1">
+  <div class="tab-container">
+    <div class="tab active" onclick="showTab(event, 'tab1', 'tab-container-1')">JS</div>
+    <div class="tab" onclick="showTab(event, 'tab2', 'tab-container-1')">Python</div>
+  </div>
+  <div id="tab1" class="tab-content active">
+    <zero-md src="/codeSnippets/apiAccessJs.md"></zero-md>
+  </div>
+  <div id="tab2" class="tab-content">
+    <zero-md src="/codeSnippets/apiAccessPy.md"></zero-md>
+  </div>
+</div>
 
-```js
-  const username =
-    'CLIENT_ID_HERE';
-  const password =
-    'CLIENT_SECRET_HERE';
-  const url =
-    'https://graphql.probablefutures.org/auth/token';
-  // Encode username and password
-  const encodedCredentials = btoa(
-    username + ':' + password);
-  const headers = new Headers();
-  headers.set('Authorization', 'Basic ' +
-    btoa(username + ':' + password));
-  fetch(url, {
-      method: 'GET', // or 'POST', 'PUT', etc.
-      headers: headers
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(
-          'Network response was not ok'
-        );
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log(data);
-    })
-    .catch(error => {
-      console.error(
-        'There was a problem with your fetch operation:',
-        error);
-    });
-```
-
-- **Using Python**:
-
-```py
-import requests
-import base64
-
-username = 'CLIENT_ID_HERE'
-password = 'CLIENT_SECRET_HERE'
-url = 'https://graphql.probablefutures.org/auth/token'
-
-# Encode username and password
-encoded_credentials = base64.b64encode((username + ':' + password).encode()).decode()
-headers = {
-    'Authorization': 'Basic ' + encoded_credentials
-}
-
-try:
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()  # Raise an exception for HTTP errors
-
-    data = response.json()
-    print(data)
-
-except requests.exceptions.RequestException as e:
-    print('There was a problem with your request:', e)
-```
+<br />
 
 **Note:** Make sure to set the correct client credentials before using the API.
