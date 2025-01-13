@@ -22,7 +22,7 @@ With ready to use maps, anyone can easily embed any Probable Futures map in a we
 
 `@probable-futures/probable-futures-maps` is a npm package that empowers developers to seamlessly integrate dynamic and interactive climate maps into their web applications.
 
-We built this npm package for developers who want to quickly an dynamically integrate the Probable Futures maps into their own web applications.
+We built this npm package for developers who want to quickly and dynamically integrate the Probable Futures maps into their own web applications.
 
 This package offers ready to use react components used to render the probable futures maps based on a variety of props.
 

@@ -7,13 +7,13 @@
 .tab {
   padding: 10px 20px;
   cursor: pointer;
-  border: 1px solid #ccc;
-  border-bottom: none;
   background: #fff;
+  box-sizing: border-box;
 }
 .tab.active {
   font-weight: bold;
   background: #f1f1f1;
+  border-bottom: 1px solid #7b7676;
 }
 .tab-content {
   display: none;

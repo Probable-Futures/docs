@@ -1,5 +1,4 @@
-```py
-
+```js
 import requests
 import base64
 
@@ -22,5 +21,4 @@ try:
 
 except requests.exceptions.RequestException as e:
     print('There was a problem with your request:', e)
-
 ```
