@@ -1,4 +1,4 @@
-```bash
+```js
 curl --location --request POST 'https://graphql.probablefutures.org/graphql' \
 --header 'Authorization: Bearer ACCESS_TOKEN_HERE' \
 --header 'Content-Type: application/json' \

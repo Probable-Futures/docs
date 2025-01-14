@@ -17,13 +17,17 @@ Below are examples of how to call the authorization API to obtain access tokens.
 
 <div id ="tab-container-1">
   <div class="tab-container">
-    <div class="tab active" onclick="showTab(event, 'tab1', 'tab-container-1')">JS</div>
-    <div class="tab" onclick="showTab(event, 'tab2', 'tab-container-1')">Python</div>
+    <div class="tab active" onclick="showTab(event, 'tab1', 'tab-container-1')">cURL</div>
+    <div class="tab" onclick="showTab(event, 'tab2', 'tab-container-1')">JS</div>
+    <div class="tab" onclick="showTab(event, 'tab3', 'tab-container-1')">Python</div>
   </div>
   <div id="tab1" class="tab-content active">
-    <zero-md src="/codeSnippets/apiAccessJs.md"></zero-md>
+    <zero-md src="/codeSnippets/apiAccessCurl.md"></zero-md>
   </div>
   <div id="tab2" class="tab-content">
+    <zero-md src="/codeSnippets/apiAccessJs.md"></zero-md>
+  </div>
+  <div id="tab3" class="tab-content">
     <zero-md src="/codeSnippets/apiAccessPy.md"></zero-md>
   </div>
 </div>
