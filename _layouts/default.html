@@ -5,6 +5,7 @@ layout: table_wrappers
 <!DOCTYPE html>
 
 <html lang="{{ site.lang | default: 'en-US' }}">
+<link rel="stylesheet" href="{{ '../assets/css/tabs.css' }}">
 {% include head.html %}
 <body>
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
@@ -37,5 +38,10 @@ layout: table_wrappers
   {% if site.mermaid %}
     {% include components/mermaid.html %}
   {% endif %}
+
+  <script src="{{ '/assets/js/tabs.js' | relative_url }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+
 </body>
 </html>

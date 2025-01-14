@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Use the maps
+title: Maps API
 nav_order: 4
 has_children: true
 ---
 
-## Use the maps
+## Maps API
 
 This section is for developers who want to integrate the Probable Futures maps into their own websites or applications. It is possible to achieve this in three ways:
 
