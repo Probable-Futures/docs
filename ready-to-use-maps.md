@@ -7,7 +7,12 @@ parent: Maps API
 
 ## Ready-to-use maps
 
-With ready-to-use maps, anyone can easily embed any Probable Futures map in any website or app. Available for all Probable Futures maps and all six warming scenarios as either a single or comparison map, these maps can be downloaded directly or integrated using our maps library. 
+With ready-to-use maps, anyone can easily embed any Probable Futures map in any website or app. Available for all Probable Futures maps and all six warming scenarios as either a single or comparison map, these maps can be downloaded directly or integrated using our maps library.
+
+<video class="video-embed" width="320" height="240" controls>
+  <source src="/assets/videos/docs-demo-part2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ### Embeddable maps - direct download
 

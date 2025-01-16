@@ -11,6 +11,11 @@ Start working with Probable Futures maps in less than five minutes with this sim
 
 We will use [Mapbox Studio](https://studio.mapbox.com) to quickly get started with Mapbox's excellent visual map editing experience. If you don't have a Mapbox account, you will need to create one to use Mapbox Studio.
 
+<video class="video-embed" controls>
+  <source src="/assets/videos/docs-demo-part1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 ### Getting Started
 
 The Probable Futures maps are made of data encoded in [tilesets](/tilesets.md) and styled to apply color and bins. Bins are the groups of colors you see in the map key. They are defined by the number at which one color stops and another starts. For example, in the [Days above 32°C (90°F) map](https://probablefutures.org/maps/?selected_map=days_above_32c), the first bin starts and stops at 0 and uses a gray color. The second bin starts at 1, stops at 7, and uses a green color. The third bin starts at 8, stops at 30, and uses a dark blue color.
