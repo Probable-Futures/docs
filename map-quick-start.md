@@ -30,6 +30,13 @@ You can easily start and customize maps using the following steps:
 6. Click the "Customize" button to open your map using the chosen style. You can then start customizing your map by changing colors, adding/removing layers, and more.
 7. To learn more about customizing Mapbox maps, please see the [Mapbox documentation](https://docs.mapbox.com/).
 
+#### Mapbox Layers and Styles
+
+\
+![alt Arizon Phoenix, days above 32](../assets/annotated-map-image.png "Customize Map Style")
+
+(Use [Mapbox data expressions](https://docs.mapbox.com/style-spec/reference/expressions/) to create dynamic visualizations.)
+
 ### How it works
 
 The Mapbox Style JSON contains all the styles (colors, layers, etc.) and references to the Probable Futures tilesets, which contain the actual climate data.
