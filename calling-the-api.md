@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: data-layout
 title: Calling the API
 nav_order: 2
 parent: Data API
@@ -150,5 +150,19 @@ Calling the API with address and country:
   </div>
    <div id="tab6" class="tab-content">
     <zero-md src="/codeSnippets/callingApiAddressPy.md"></zero-md>
+  </div>
+  <h2>Try it out yourself</h2>
+  <h3>Get the token</h3>
+  <div class="playground-container">
+    <div id="getTokenEditor" class="editor-container"></div>
+    <button class="run-button" onclick="runCode('getTokenEditor', true)">Run Code</button>
+    <div id="output_getTokenEditor" class="output"></div>
+  </div>
+  <h3>Call the API</h3>
+  <div class="playground-container">
+    <div id="callTheApiEditor" class="editor-container"></div>
+    <button class="run-button" onclick="runCode('callTheApiEditor', true)">Run Code</button>
+    <div id="output_callTheApiEditor" class="output"></div>
+    <button id="showMoreBtn_callTheApiEditor" style="display: none;" onclick="expand('callTheApiEditor')">Show More</button>
   </div>
 </div>

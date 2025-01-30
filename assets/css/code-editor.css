@@ -1,0 +1,46 @@
+.playground-container {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+.editor-container {
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.language-select {
+    margin-bottom: 10px;
+}
+.run-button {
+    background: #851fff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.run-button:hover {
+    scale: 0.99;
+    opacity: 0.8;
+}
+.run-button:active {
+    scale: 1;
+    opacity: 0.9;
+}
+.output {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    min-height: 100px;
+    white-space: pre-wrap;
+    max-height: 30em;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.output.expanded {
+    max-height: none;
+}
