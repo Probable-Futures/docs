@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: data-layout
 title: API access
 nav_order: 1
 parent: Data API
