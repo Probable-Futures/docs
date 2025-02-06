@@ -2,7 +2,7 @@
 layout: data-layout
 title: Calling the data API
 nav_order: 2
-parent: Data API
+parent: Data
 ---
 
 # Calling the data API
