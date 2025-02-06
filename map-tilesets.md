@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Tilesets
-nav_order: 1
+title: Map tilesets
+nav_order: 5
 parent: Maps
 ---
 
-## Tilesets
+# Map tilesets
 
 Probable Futures maps are made up of Mapbox tilesets. A Mapbox tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at up to 22 preset zoom levels. Probable Futures tilesets are vector and start at zoom level 2.
 
