@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: maps-layout
 title: Map APIs and embeds
 nav_order: 2
 parent: Maps
@@ -21,7 +21,7 @@ These maps APIs can be used to:
 - Show any place in the world, at any zoom level
 - Do the above for a single warming scenario or multiple, in comparison or sequentially
 
-## Embeddable maps API - using React 
+## Embeddable maps API - using React
 
 `@probable-futures/probable-futures-maps` is an npm package that enables developers to integrate dynamic and interactive climate maps into their web applications using React.
 
@@ -38,7 +38,7 @@ Your browser does not support the video tag.
 
 `@probable-futures/probable-futures-html-generator` is an npm package that enables developers to integrate dynamic and interactive climate maps into their web applications using pure HTML.
 
-This package offers an HTML generator that creates pure HTML versions of the Probable Futures maps. 
+This package offers an HTML generator that creates pure HTML versions of the Probable Futures maps.
 
 Learn more about this package and find installation instruction in [the npm registry: @probable-futures/probable-futures-maps-html-generator](https://www.npmjs.com/package/@probable-futures/probable-futures-maps-html-generator).
 
@@ -50,6 +50,15 @@ Learn more about this package and find installation instruction in [the npm regi
 4. Select "Download as embeddable map" or "Download as embeddable comparison map". If selecting a standard embeddable map, the warming scenario you are viewing will be shown in the embeddable map. If selecting a comparison map, choose the warming scenarios you would like to include in the embeddable map in the next step.
 5. Click the download button to download the embeddable map file.
 6. Add the file to any website, application, or article.
+
+## Demo
+
+<h1>Probable Futures Climate Map</h1>
+<div id="map-code-editor" style="height: 300px; width: 100%; border: 1px solid #ccc;"></div>
+<button onclick="saveAndRunCode()">Save and Run Code</button>
+
+<div id="map-container"></div>
+<button onclick="changeScenario(3)">Change Scenario to 3°C</button>
 
 ## Customize maps using Mapbox Studio
 
@@ -70,7 +79,7 @@ Your browser does not support the video tag.
 
 ### How it works
 
-The Probable Futures maps are made of data encoded in [tilesets](/map-tilesets) and styled to apply color and bins. The Mapbox Style JSON contains all the styles (colors, layers, specification for place labels and borders, terrain, etc.) and references to the Probable Futures tilesets, which contain the actual climate data. The Probable Futures tilesets are public in Mapbox, so anyone can use Mapbox styles to make a map using Probable Futures data by referencing the appropriate tileset IDs for a given map. 
+The Probable Futures maps are made of data encoded in [tilesets](/map-tilesets) and styled to apply color and bins. The Mapbox Style JSON contains all the styles (colors, layers, specification for place labels and borders, terrain, etc.) and references to the Probable Futures tilesets, which contain the actual climate data. The Probable Futures tilesets are public in Mapbox, so anyone can use Mapbox styles to make a map using Probable Futures data by referencing the appropriate tileset IDs for a given map.
 
 \
 ![alt Arizon Phoenix, days above 32](../assets/annotated-map-image.png "Customize Map Style")
