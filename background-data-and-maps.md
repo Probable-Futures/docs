@@ -1,11 +1,11 @@
 ---
 layout: default
-title: About the data and maps
+title: The data and maps
 nav_order: 1
 parent: Background
 ---
 
-# About the Probable Futures data and maps
+# The Probable Futures data and maps
 
 All resources described in this documentation refer to different ways of accessing or visualizing the same underlying data. These data are global maps of modeled climate conditions in different scenarios.
 

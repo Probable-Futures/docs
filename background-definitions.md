@@ -22,4 +22,4 @@ The following terms are important to know and understand when working with Proba
 | Mid      | 50th (Median) or Mean Value*| Conditions near this value should be expected in a typical year during the given warming scenario. For example, in a map of the average temperature, this value would represent a typical or moderate year in the location of the grid cell. |
 | High     | 95th | Conditions like these should be expected approximately 5% of the time during the given warming scenario. Higher values could also occur in this warming scenario with lower likelihood than this value. For example, in a map of the average temperature, this value would represent a warm year in the location of the grid cell, but not the warmest possible year. |
 
-*See [Note on average and median values](/background-about/#note-on-average-and-median-values)
+*See [Note on average and median values](/background-data-and-maps/#note-on-average-and-median-values)

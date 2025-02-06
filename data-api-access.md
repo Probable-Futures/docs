@@ -1,6 +1,6 @@
 ---
 layout: data-layout
-title: API access
+title: Data API access
 nav_order: 1
 parent: Data
 ---

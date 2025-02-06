@@ -7,7 +7,7 @@ parent: Data
 
 # Calling the data API
 
-The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
+The data API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
 ### 1. Location data, in any of the following formats (required)
 
