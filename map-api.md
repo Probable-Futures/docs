@@ -70,7 +70,7 @@ Your browser does not support the video tag.
 
 ### How it works
 
-The Probable Futures maps are made of data encoded in [tilesets](/tilesets.md) and styled to apply color and bins. The Mapbox Style JSON contains all the styles (colors, layers, specification for place labels and borders, terrain, etc.) and references to the Probable Futures tilesets, which contain the actual climate data. The Probable Futures tilesets are public in Mapbox, so anyone can use Mapbox styles to make a map using Probable Futures data by referencing the appropriate tileset IDs for a given map. 
+The Probable Futures maps are made of data encoded in [tilesets](/map-tilesets) and styled to apply color and bins. The Mapbox Style JSON contains all the styles (colors, layers, specification for place labels and borders, terrain, etc.) and references to the Probable Futures tilesets, which contain the actual climate data. The Probable Futures tilesets are public in Mapbox, so anyone can use Mapbox styles to make a map using Probable Futures data by referencing the appropriate tileset IDs for a given map. 
 
 \
 ![alt Arizon Phoenix, days above 32](../assets/annotated-map-image.png "Customize Map Style")

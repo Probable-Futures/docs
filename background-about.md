@@ -31,7 +31,7 @@ Probable Futures has a climate science partner called [Woodwell Climate Research
 
 The maps created by Woodwell are in a format commonly used for climate data called NetCDF. Because NetCDF files are not web-ready, we built a parser to read these files, process and format the data inside, and feed the datasets into our database. After that we create GeoJSON files which we use to create tilesets and styles using the Mapbox tiling service.
 
-To learn more about tilesets, read the [tilesets page](/tilesets.md).
+To learn more about tilesets, read the [tilesets page](/map-tilesets).
 
 ## Understanding climate scenarios
 

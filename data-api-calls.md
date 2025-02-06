@@ -1,11 +1,11 @@
 ---
 layout: data-layout
-title: Calling the API
+title: Calling the data API
 nav_order: 2
 parent: Data API
 ---
 
-# Calling the API
+# Calling the data API
 
 The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
@@ -23,7 +23,7 @@ The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/gr
 
 ### 3. Dataset ID (optional)
 
-- `datasetId`: ID of the dataset requested, of type integer. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](./maps.md) page.
+- `datasetId`: ID of the dataset requested, of type integer. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](/maps) page.
 
 ### Example request
 
@@ -70,7 +70,7 @@ The response of the API includes a list of objects that has the following proper
 Some or all the fields can be requested to be part of the response.
 
 {: .note }
-`values` contains 101 variables corresponding to the precentiles from 0 (the minimum) to 100 (the maximum). Read more about [Statistical Percentiles & Range of Values](/definitions). These values can specifically be used to draw charts like plot charts showing the chance of experiencing a sepcific outcome or range of outcomes. To understand this varibable a bit more and see examples of ways to draw these charts read about [Data Charting](/data-charting).
+`values` contains 101 variables corresponding to the precentiles from 0 (the minimum) to 100 (the maximum). Read more about [Statistical Percentiles & Range of Values](/background-definitions). These values can specifically be used to draw charts like plot charts showing the chance of experiencing a sepcific outcome or range of outcomes. To understand this varibable a bit more and see examples of ways to draw these charts read about [Data Charting](/data-charting).
 
 ### Example response
 

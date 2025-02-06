@@ -18,7 +18,7 @@ Probable Futures tilesets can be used to create maps in your own application. To
 The full list of tileset IDs for Probable Futures maps are located in the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=2095694025).
 
 {: .note }
-Every Probable Futures map is made up of two tilesets and each tileset is composed of many layers we call regions. To learn more about tileset structure, skip to the [tileset structure](/tilesets.md#tileset-structure) section.
+Every Probable Futures map is made up of two tilesets and each tileset is composed of many layers we call regions. To learn more about tileset structure, skip to the [tileset structure](/map-tilesets#tileset-structure) section.
 
 ## Map styles
 
@@ -58,7 +58,7 @@ Each map has one tileset for the east (e.g., `probablefutures.40104-east-v3`) wi
 
 There are 24 regions per map: eight for Asia and Oceana (e.g., `region_as_oc_1`), nine for Europe and Africa (e.g., `region_eu_af_2`), and seven for the Americas (e.g., `region_na_sa_3`).
 
-Each region is created within a specified bounding box defined by its coordinates. For example, the region with id `region_as_oc_7`, is located in the east tileset and has a bounding box, `bbox = [65.2, -25.8, 180, -10.58]`. These divisions are necessary because Mapbox has size limitations on both tilesets overall and layers within tilesets. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points. Generally, these divisions can be ignored. For example, when creating a map with our [Mapbox quick-start](/mapbox-quick-start.md) guide, details about tileset and layer divisions are abstracted away in the Mapbox style file and need not be understood or modified for most use-cases.
+Each region is created within a specified bounding box defined by its coordinates. For example, the region with id `region_as_oc_7`, is located in the east tileset and has a bounding box, `bbox = [65.2, -25.8, 180, -10.58]`. These divisions are necessary because Mapbox has size limitations on both tilesets overall and layers within tilesets. Climate models are larger than data typically displayed in tilesets. Each of our maps has approximately 500,000 data points. Generally, these divisions can be ignored. For example, when creating a map with our [guide to customize the maps using Mapbox studio](/map-api/#customize-maps-using-mapbox-studio), details about tileset and layer divisions are abstracted away in the Mapbox style file and need not be understood or modified for most use-cases.
 
 ### Zoom levels
 
