@@ -2,7 +2,8 @@
 layout: default
 title: Maps API
 nav_order: 4
-has_children: true
+parent: Maps
+
 ---
 
 ## Maps API

@@ -6,20 +6,25 @@ nav_order: 1
 
 ## Probable Futures Open Data Documentation
 
-[Probable Futures](https://probablefutures.org/) resources, data, and maps enable anyone to build climate literacy. Building climate literacy empowers individuals and organizations to understand how the Earth’s climate system works, recognize the ways in which it underpins our society, and identify opportunities to address the challenges and opportunities that climate change presents.
+Welcome to the [Probable Futures](https://probablefutures.org/) open data documentation. The tools, data, and maps described here enable anyone to build climate literacy using open-source, vetted and tested climate data. 
+
+### Why climate literacy
+Building climate literacy empowers individuals and organizations to understand how the Earth’s climate system works, recognize the ways in which it underpins our society, and identify opportunities to address the challenges and opportunities that climate change presents.
 
 A foundation of climate literacy is critical to:
-– understand your climate risk
-– make informed decisions
-– take appropriate actions
-– mitigate the impacts of climate change
-– contribute to a more resilient future
+- understand your climate risk
+- make informed decisions
+- take appropriate actions
+- mitigate the impacts of climate change
+- contribute to a more resilient future
 
 Living well in a changing climate depends on climate literacy. 
 
+### What this is and who it is for 
+
 The data and maps described in this documentation offer specific, global-to-local insight into climate conditions across six different climate scenarios, including the past, near-present, future, and potential-future. 
 
-This documentation is intended for data-savvy people, including but not limited to analysts, data scientists, and software engineers, who are interested in exploring or building applications with Probable Futures maps and data. The resources described in this documentation includes the Probable Futures maps, tilesets, APIs, raw data, and more.
+This documentation is intended for data-savvy people who are interested in exploring or building applications with Probable Futures maps and data, including but not limited to analysts, data scientists, and software engineers. The resources described in this documentation include the Probable Futures maps, APIs, raw data, and more.
 
 ### Prerequisite
 

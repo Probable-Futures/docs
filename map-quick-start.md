@@ -2,7 +2,7 @@
 layout: default
 title: Map quick start
 nav_order: 1
-parent: Maps API
+parent: Maps
 ---
 
 ## Map quick start

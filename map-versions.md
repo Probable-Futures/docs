@@ -2,7 +2,7 @@
 layout: default
 title: Map versions
 nav_order: 2
-parent: Maps background
+parent: Maps
 ---
 
 ## Map versions

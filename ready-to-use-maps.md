@@ -2,7 +2,7 @@
 layout: default
 title: Ready-to-use maps
 nav_order: 2
-parent: Maps API
+parent: Maps
 ---
 
 ## Ready-to-use maps

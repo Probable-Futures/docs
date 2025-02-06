@@ -2,7 +2,7 @@
 layout: default
 title: Tilesets
 nav_order: 1
-parent: Maps background
+parent: Maps
 ---
 
 ## Tilesets
