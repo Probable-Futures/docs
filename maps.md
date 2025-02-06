@@ -46,6 +46,93 @@ Below is a list of all maps currently published on [probablefutures.org/maps](ht
 | [Change in wildfire danger days](https://probablefutures.org/maps/?selected_map=change_in_wildfire_danger_days&map_version=latest&volume=land&warming_scenario=1#2.2/0/0)                                 | 40704 | Dryness           |
 | [Climate zones](https://probablefutures.org/maps/?selected_map=climate_zones&map_version=latest&volume=other&warming_scenario=1#2.2/0/0)                                                                  | 40901 | Other             |
 
+
+### Fetch the maps
+To retrieve all available maps and their attributes stored in our database, follow these steps:
+
+1. Obtain an API access token by following the instructions provided [here](/api-access.md). (Skip this step if you already have a token.)
+2. Use the endpoint below to fetch the complete list of maps from our database.
+
+```js
+const myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Authorization", "Bearer {ACCESS_TOKEN_HERE}");
+
+const graphql = JSON.stringify({
+  query: "query {\n    pfMaps(condition: {status: \"published\", isLatest: true}){\n        nodes {\n            mapStyleId\n            name\n            description\n            stops\n            binHexColors\n            status\n            dataset {\n            id\n            name\n            slug\n            description\n            subCategory\n            model\n            unit\n            minValue\n            maxValue\n            dataVariables\n            }\n            isDiff\n            step\n            binningType\n            binLabels\n            slug\n            mapVersion\n            isLatest\n            createdAt\n            updatedAt\n            dataLabels\n            methodUsedForMid\n        }\n    }\n}",
+  variables: {}
+});
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: graphql,
+  redirect: "follow"
+};
+
+fetch("graphql.probablefutures.org/graphql", requestOptions)
+  .then((response) => response.text())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
+```
+
+Example response:
+
+```js
+{
+    "mapStyleId": "cli004t7p02av01quclg5aoqe",
+    "name": "Days above 30°C (86°F) wet-bulb",
+    "description": null,
+    "stops": [
+        1,
+        4,
+        8,
+        15,
+        29
+    ],
+    "binHexColors": [
+        "#515866",
+        "#0ed5a3",
+        "#0099e4",
+        "#8be1ff",
+        "#ff45d0",
+        "#d70066"
+    ],
+    "status": "published",
+    "dataset": {
+        "id": 40303,
+        "name": "Number of days maximum wet-bulb temperature above 30°C",
+        "slug": "global_RegCM_and_REMO_tasmax_days_ge30",
+        "description": "",
+        "subCategory": "heat and humidity",
+        "model": "global RegCM and REMO",
+        "unit": "days",
+        "minValue": 0,
+        "maxValue": 365,
+        "dataVariables": [
+            "5th percentile",
+            "average",
+            "95th percentile"
+        ]
+    },
+    "isDiff": false,
+    "step": 1,
+    "binningType": "range",
+    "binLabels": null,
+    "slug": "days_above_30c_wet-bulb",
+    "mapVersion": 3,
+    "isLatest": true,
+    "createdAt": "2023-07-18T08:55:13.421522+00:00",
+    "updatedAt": "2023-09-01T09:45:11.865861+00:00",
+    "dataLabels": [
+        "Cooler year",
+        "Average year",
+        "Warmer year"
+    ],
+    "methodUsedForMid": "mean"
+},
+```
+
 ### Why these maps?
 
 Our process for creating maps involves considering particular phenomena and thresholds that matter to people and civilization. For example, nights above 20°C (68°F) are not comfortable for sleeping without air conditioning. All wet-bulb temperatures below carry some risk to human health for anyone working or playing outdoors. Loss of frost and freezing allow spread of pathogens. Increased precipitation and more severe and frequent storms require more infrastructure to hold and manage rainwater to prevent flooding. Now we welcome you to think of other examples and create tools using these maps. Tools using these maps can help communities, governments, businesses, and individuals prepare for the climate futures that are likely, and work to avoid the ones that carry the most profound risks for our world. We also welcome feedback about these maps and ideas for others.
