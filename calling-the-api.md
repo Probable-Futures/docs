@@ -5,11 +5,11 @@ nav_order: 2
 parent: Data API
 ---
 
-## Calling the API
+# Calling the API
 
 The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/graphql` where the query is a mutation with the following inputs:
 
-1. Location data, in any of the following formats (required)
+### 1. Location data, in any of the following formats (required)
 
 - `longitude`: Type: number. Valid longitudes should be between -180 and 180.
 - `latitude`: Type: number. Valid latitudes should be between -90 and 90.
@@ -17,11 +17,11 @@ The API is a GraphQL endpoint located at `https://graphql.probablefutures.org/gr
 - `city`: Cities, villages, municipalities. Type: string. Should be sent with a country and/or address.
 - `address`: Any place name, postal addresses, individual residential or business addresses. Type: string. Can be sent alone or with city and/or country.
 
-2. Warming scenario (optional)
+### 2. Warming scenario (optional)
 
 - `warmingScenario`: Specifies the warming scenario. Type: string or string array. Should be one or more of these values: "0.5", "1.0", "1.5", "2.0", "2.5", "3.0". For example, ["1", "2.5"]. If omitted, all 6 warming scenarios will be returned.
 
-3. Dataset ID (optional)
+### 3. Dataset ID (optional)
 
 - `datasetId`: ID of the dataset requested, of type integer. If omitted the data for all datasets will be returned. See the full list of dataset IDs and their corresponding names on the [maps](./maps.md) page.
 
@@ -96,7 +96,7 @@ Some or all the fields can be requested to be part of the response.
 }
 ```
 
-The "info" property is an object that provides additional details related to the query, if there any, such as for the climate zones dataset. Here is an example of the "info" property displaying the name of the climate zone that is expected in a 1.0°C warming scenario:
+The `"info"` property is an object that provides additional details related to the query, if there any, such as for the climate zones dataset. Here is an example of the `"info"` property displaying the name of the climate zone that is expected in a 1.0°C warming scenario:
 
 ```js
 {
@@ -113,7 +113,7 @@ The "info" property is an object that provides additional details related to the
 }
 ```
 
-### Applied examples
+## Applied examples
 
 Calling the API with lon and lat:
 

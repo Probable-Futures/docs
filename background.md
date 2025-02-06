@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Data background
+title: Background
 nav_order: 2
 has_children: true
 ---
 
-## Data background
+# Background

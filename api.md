@@ -5,6 +5,6 @@ nav_order: 5
 has_children: true
 ---
 
-## The API
+# The data API
 
-The Probable Futures API delivers climate data about any location in the world.
+The Probable Futures data API delivers climate data about any location in the world. 

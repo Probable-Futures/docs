@@ -2,8 +2,9 @@
 layout: default
 title: Definitions
 nav_order: 6
+parent: Background
 ---
-## Definitions
+# Definitions
 
 The following terms are important to know and understand when working with Probable Futures maps and data.
 
@@ -15,7 +16,7 @@ The following terms are important to know and understand when working with Proba
 
 **Statistical Percentiles & Range of Values**: Every grid cell in every Probable Futures map contains a low, mid, and high value.
 
-| PF Value | Percentile Value| Explanation |
+| Value | Percentile | Explanation |
 | ---------| ----------------| ------------|
 | Low      | 5th | Conditions like these should be expected approximately 5% of the time during the given warming scenario. Lower values could also occur in this warming scenario with lower likelihood than this value. For example, in a map of the average temperature, this value would represent a cool year in the location of the grid cell, but not the coolest possible year. |
 | Mid      | 50th (Median) or Mean Value*| Conditions near this value should be expected in a typical year during the given warming scenario. For example, in a map of the average temperature, this value would represent a typical or moderate year in the location of the grid cell. |

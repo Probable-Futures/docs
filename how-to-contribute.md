@@ -4,7 +4,7 @@ title: How to contribute
 nav_order: 7
 ---
 
-## How to contribute to Probable Futures open-source projects
+# How to contribute to Probable Futures open-source projects
 
 If you plan to contribute code or documentation to Probable Futures open source projects, you must have a [GitHub account](https://github.com/signup/free) so you can open Pull Requests.
 
