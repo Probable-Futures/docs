@@ -9,7 +9,7 @@ parent: Maps
 
 This section is for people who want to integrate the Probable Futures maps into their own websites or applications. It is possible to achieve this in three ways:
 
-1. Use the maps APIs (npm packages) to integrate the maps into your own application, for example if you are creating an application where you will display more than one map. 
+1. Use the map APIs (npm packages) to integrate the maps into your own application, for example if you are creating an application where you will display more than one map. 
 2. Download an embeddable map, for example to display a map in an article.
 3. Customize, restyle, and host the maps with your own Mapbox account, for example if you would like to use different colors or bins on the maps.
 
@@ -21,7 +21,7 @@ These maps APIs can be used to:
 - Show any place in the world, at any zoom level
 - Do the above for a single warming scenario or multiple, in comparison or sequentially
 
-## Embeddable maps - using the React library
+## Embeddable maps API - using React 
 
 `@probable-futures/probable-futures-maps` is an npm package that enables developers to integrate dynamic and interactive climate maps into their web applications using React.
 
@@ -34,7 +34,7 @@ Learn more about this package and find installation instruction in [the npm regi
 Your browser does not support the video tag.
 </video>
 
-## Embeddable maps - using the library for generating HTML
+## Embeddable maps API - HTML generator
 
 `@probable-futures/probable-futures-html-generator` is an npm package that enables developers to integrate dynamic and interactive climate maps into their web applications using pure HTML.
 
