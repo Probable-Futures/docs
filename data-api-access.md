@@ -7,7 +7,7 @@ parent: Data API
 
 # Data API access
 
-Anyone is welcome to use the API. To sign up and receive API credentials, please [fill out this form](https://airtable.com/shrOMfMgh7EoHajKN). We expect you to store these credentials in a secure location appropriate for storing secrets such as a password manager. The credentials are a `client ID` and `client secret`.
+Anyone is welcome to use the data API. To sign up and receive API credentials, please [fill out this form](https://airtable.com/shrOMfMgh7EoHajKN). We expect you to store these credentials in a secure location appropriate for storing secrets such as a password manager. The credentials are a `client ID` and `client secret`.
 
 ## Request an access token
 

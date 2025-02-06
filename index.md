@@ -4,7 +4,7 @@ title: Home
 nav_order: 1
 ---
 
-## Probable Futures Open Data Documentation
+# Probable Futures Open Data Documentation
 
 Welcome to the [Probable Futures](https://probablefutures.org/) open data documentation. The tools, data, and maps described here enable anyone to build climate literacy using open-source, vetted and tested climate data. 
 

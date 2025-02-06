@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Data API
+title: Data 
 nav_order: 5
 has_children: true
 ---
 
-# The data API
+# Data API and downloads
 
 The Probable Futures data API delivers climate data about any location in the world. 
