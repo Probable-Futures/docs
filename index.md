@@ -34,4 +34,4 @@ The Probable Futures [climate handbook](https://probablefutures.org/climate-hand
 
 Probable Futures is a non-profit climate literacy initiative that makes practical tools, stories, and resources available online to everyone, everywhere. We offer educational materials and data tools to empower individuals, organizations, and governments to prepare for the futures that are likely, and work to avoid the ones that carry the most profound risks for our world.
 
-To learn more about the Probable Futures organization, visit [the About page](https://probablefutures.org/about).
+To learn more about the Probable Futures organization or support our work, visit [probablefutures.org](https://probablefutures.org/).
