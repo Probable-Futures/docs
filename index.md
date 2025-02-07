@@ -26,9 +26,9 @@ The data and maps described in this documentation offer specific, global-to-loca
 
 This documentation is intended for data-savvy people who are interested in exploring or building applications with Probable Futures maps and data, including but not limited to analysts, data scientists, and software engineers. The resources described in this documentation include the Probable Futures maps, APIs, raw data, and more.
 
-### Prerequisite
+### Pre-reading
 
-We strongly recommend reading, or listening to the audio version of, the Probable Futures [climate handbook](https://probablefutures.org/climate-handbook). The handbook provides essential context for using and interpreting the maps and data described in this documentation. 
+The Probable Futures [climate handbook](https://probablefutures.org/climate-handbook) takes you from the climate stability of the past, through the changes we are experiencing today, and into our probable futures. It is available as a multimedia reading experience or in audio form. It provides essential context for using and interpreting the maps and data described in this documentation. 
 
 ### About Probable Futures
 
