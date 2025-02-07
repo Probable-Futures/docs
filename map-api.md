@@ -53,12 +53,13 @@ Learn more about this package and find installation instruction in [the npm regi
 
 ## Demo
 
-<h1>Probable Futures Climate Map</h1>
+### Generating climate map using `@probable-futures/probable-futures-html-generator` package
+
 <div id="map-code-editor" style="height: 300px; width: 100%; border: 1px solid #ccc;"></div>
-<button onclick="saveAndRunCode()">Save and Run Code</button>
+<button class="generate-maps-button" onclick="saveAndRunCode()">Save and Run Code</button>
 
 <div id="map-container"></div>
-<button onclick="changeScenario(3)">Change Scenario to 3°C</button>
+<button class="change-scenario-button" onclick="changeScenario(3)">Change Scenario to 3°C</button>
 
 ## Customize maps using Mapbox Studio
 
