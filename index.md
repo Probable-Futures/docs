@@ -6,7 +6,7 @@ nav_order: 1
 
 # Probable Futures Open Data Documentation
 
-Welcome to the [Probable Futures](https://probablefutures.org/) open data documentation. The tools, data, and maps described here enable anyone to build climate literacy using open-source, vetted and tested climate data. 
+Welcome to the [Probable Futures](https://probablefutures.org/) open data documentation. The tools, data, and maps described here enable anyone to foster climate literacy using vetted and tested open-source climate data and maps. To begin using these resources, [sign up](https://airtable.com/app5vySCXl6f2s8zB/shrOMfMgh7EoHajKN). 
 
 ### Why climate literacy
 Building climate literacy empowers individuals and organizations to understand how the Earth’s climate system works, recognize the ways in which it underpins our society, and identify opportunities to address the challenges and opportunities that climate change presents.
