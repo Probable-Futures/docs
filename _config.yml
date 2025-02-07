@@ -27,6 +27,8 @@ exclude:
 aux_links:
   "View on GitHub":
     - "https://github.com/Probable-Futures/docs"
+  "Support Probable Futures":
+    - "https://probablefutures.org/support"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
@@ -52,7 +54,7 @@ callouts:
     title: Warning
     color: red
 
-s
+
 ###########################################################################################
 
 # Enable or disable the site search
