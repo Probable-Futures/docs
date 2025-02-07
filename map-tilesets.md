@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Map tilesets
-nav_order: 5
+nav_order: 3
 parent: Maps
 ---
 
