@@ -1,0 +1,47 @@
+.generate-maps-button {
+  background-color: #851fff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.generate-maps-button:hover {
+  background-color: #6a17cc;
+  transform: scale(1.05);
+}
+
+.generate-maps-button:active {
+  background-color: #5a14a8;
+  transform: scale(0.98);
+}
+
+.change-scenario-button {
+  background-color: #DA2E80;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.change-scenario-button:hover {
+  background-color: #cc1717;
+  transform: scale(1.05);
+}
+
+.change-scenario-button:active {
+  background-color: #a81414;
+  transform: scale(0.98);
+}
+
+#map-code-editor {
+  margin-top: 10px;
+}
