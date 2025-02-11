@@ -2,15 +2,15 @@
 layout: default
 title: Data charting
 nav_order: 3
-parent: Data API
+parent: Data
 ---
 # Data charting
 
-For context, please read [Calling the API page](/calling-the-api) before going through this page.
+For context, please read [calling the API page](/data-api-calls) before going through this page.
 
 ## Implementing charts from scratch
 
-Assuming you have already obtained the API credentials and were able to receive an API response with some data for a specific location, you may now also want to create charts with the percentiles that represent the full range of expected weather outcomes for that location in various warming scenarios. As described on the [Calling the API page](/calling-the-api), the variable `values` that you receive from the API contains 101 variables corresponding to the precentiles ranging from 0 to 100. Below you will find more information on how to use this variable to draw plots.
+Assuming you have already obtained the API credentials and were able to receive an API response with some data for a specific location, you may now also want to create charts with the percentiles that represent the full range of expected weather outcomes for that location in various warming scenarios. As described on the [calling the API page](/data-api-calls), the variable `values` that you receive from the API contains 101 variables corresponding to the precentiles ranging from 0 to 100. Below you will find more information on how to use this variable to draw plots.
 
 Let start with an example:
 
@@ -65,7 +65,7 @@ Rather than calling the API and creating your own charts, we've provided a Chart
 
 - **width** (number, required)
 - **height** (number, required)
-- **datasetStats** (StatisticsData[], required): the stats that you receive after calling the API to get the climate data for a specific location ([learn more about calling the API](/calling-the-api)).
+- **datasetStats** (StatisticsData[], required): the stats that you receive after calling the API to get the climate data for a specific location ([learn more about calling the API](/data-api-calls)).
 Note that you can import that StatisticsData from `@probable-futures/lib`
 - **datasetId** (number, required)
 - **warmingScenario** (number, required) - supported values: `0.5 | 1 | 1.5 | 2 | 2.5 | 3`

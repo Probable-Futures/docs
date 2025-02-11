@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Data background
-nav_order: 2
+title: Data 
+nav_order: 5
 has_children: true
 ---
 
-## Data background
+# Data API and downloads
+
+The Probable Futures data API and downloads deliver climate data about any location in the world.
