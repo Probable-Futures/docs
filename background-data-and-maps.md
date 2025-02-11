@@ -110,8 +110,6 @@ When creating these maps, we realized the range of values sometimes formed a nor
 
 To see the full list of the percentiles used for each map, please see the [Low-Mid-High Values tab in the Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=180787380).
 
-
-
 ## Further reading
 
 To learn more about climate models in general and the Probable Futures maps in particular, please visit [the Science page](https://probablefutures.org/science/) on probablefutures.org.

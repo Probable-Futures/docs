@@ -12,6 +12,7 @@ Welcome to the [Probable Futures](https://probablefutures.org/) open data docume
 Building climate literacy empowers individuals and organizations to understand how the Earth’s climate system works, recognize the ways in which it underpins our society, and identify opportunities to address the challenges and opportunities that climate change presents.
 
 A foundation of climate literacy is critical to:
+
 - understand your climate risk
 - make informed decisions
 - take appropriate actions
@@ -28,7 +29,7 @@ This documentation is intended for data-savvy people who are interested in explo
 
 ### Pre-reading
 
-The Probable Futures [climate handbook](https://probablefutures.org/climate-handbook) takes you from the climate stability of the past, through the changes we are experiencing today, and into our probable futures. It is available as a multimedia reading experience or in audio form. It provides essential context for using and interpreting the maps and data described in this documentation. 
+The Probable Futures [climate handbook](https://probablefutures.org/climate-handbook) takes you from the climate stability of the past, through the changes we are experiencing today, and into our probable futures. It is available as a multimedia reading experience or in audio form. It provides essential context for using and interpreting the maps and data described in this documentation.
 
 ### About Probable Futures
 

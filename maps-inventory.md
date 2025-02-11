@@ -7,9 +7,9 @@ parent: Maps
 
 # Maps inventory
 
-Below is a list of all maps currently published on [probablefutures.org](https://probablefutures.org). 
+Below is a list of all maps currently published on [probablefutures.org](https://probablefutures.org).
 
-In the table below, the map name links to the map on [probablefutures.org/maps](https://probablefutures.org/maps). The ID can be used to identify the map in the various resources described in this documentation, such as in the maps and data APIs.  The category describes the climate condition or trend that relates to the map. 
+In the table below, the map name links to the map on [probablefutures.org/maps](https://probablefutures.org/maps). The ID can be used to identify the map in the various resources described in this documentation, such as in the maps and data APIs.  The category describes the climate condition or trend that relates to the map.
 
 To see this list in a spreadsheet with additional metadata such as map units, tileset IDs, climate model information, and technical descriptions, please see the [Probable Futures Public Dataset Inventory](https://docs.google.com/spreadsheets/d/1pE7KBSzsKXq7Qwsxgic_0YCIMi-dYtOEEFlGcvRLdOg/edit#gid=254758432).
 
@@ -45,7 +45,6 @@ To see this list in a spreadsheet with additional metadata such as map units, ti
 | [Likelihood of year-plus extreme drought](https://probablefutures.org/maps/?selected_map=likelihood_of_year-plus_extreme_drought&map_version=latest&volume=land#2.2/0/0)               | 40701 | Dryness           |
 | [Change in wildfire danger days](https://probablefutures.org/maps/?selected_map=change_in_wildfire_danger_days&map_version=latest&volume=land#2.2/0/0)                                 | 40704 | Dryness           |
 | [Climate zones](https://probablefutures.org/maps/?selected_map=climate_zones&map_version=latest&volume=other#2.2/0/0)                                                                  | 40901 | Other             |
-
 
 ## Map versions
 
