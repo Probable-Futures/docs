@@ -32,7 +32,7 @@
   transition: background 0.3s ease, transform 0.2s;
 }
 
-.change-scenario-button:hover {
+.change-scenario-button:hover, .selected-scenario {
   background-color: #cc1717;
   transform: scale(1.05);
 }
@@ -44,4 +44,12 @@
 
 #map-code-editor {
   margin-top: 10px;
+}
+
+.pf-warming-scenario-button-wrapper {
+  display: flex;
+  justify-content: start;
+  gap: 10px; 
+  margin-top: 10px;
+  row-gap: 15px; 
 }

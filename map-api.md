@@ -59,4 +59,13 @@ Learn more about this package and find installation instruction in [the npm regi
 <button class="generate-maps-button" onclick="saveAndRunCode()">Save and Run Code</button>
 
 <div id="map-container"></div>
-<button class="change-scenario-button" onclick="changeScenario(3)">Change Scenario to 3°C</button>
+
+<div class="pf-warming-scenario-button-wrapper">
+  <div>Warming scenarios:</div>
+  <button class="change-scenario-button" onclick="changeScenario(event, 0.5)">0.5°C</button>
+  <button class="change-scenario-button" onclick="changeScenario(event, 1)">1°C</button>
+  <button class="change-scenario-button" onclick="changeScenario(event, 1.5)">1.5°C</button>
+  <button class="change-scenario-button selected-scenario" onclick="changeScenario(event, 2)">2°C</button>
+  <button class="change-scenario-button" onclick="changeScenario(event, 2.5)">2.5°C</button>
+  <button class="change-scenario-button" onclick="changeScenario(event, 3)">3°C</button>
+</div>

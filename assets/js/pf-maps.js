@@ -5,7 +5,7 @@ editor.session.setMode("ace/mode/javascript");
 const editableCode = `
   async function initializeMap() {
     const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
-      datasetId: 40101,
+      datasetId: 40104,
       viewState: { zoom: 4 },
       scenario: 2,
     });
@@ -32,8 +32,25 @@ function saveAndRunCode() {
   document.getElementById("map-container").innerHTML = "";
 
   try {
+    const scenarioMatch = newCode.match(/scenario:\s*([\d.]+)/);
+    let scenarioValue = scenarioMatch ? parseFloat(scenarioMatch[1]) : null;
+
     eval(newCode);
     initializeMap();
+
+    document.querySelectorAll(".change-scenario-button").forEach(button => {
+      button.classList.remove("selected-scenario");
+    });
+
+    // Find and add "active" class to the button with the matching scenario value
+    if (scenarioValue !== null) {
+      const matchingButton = [...document.querySelectorAll(".change-scenario-button")]
+        .find(button => button.textContent.includes(`${scenarioValue}°C`));
+
+      if (matchingButton) {
+        matchingButton.classList.add("selected-scenario");
+      }
+    }
   } catch (error) {
     console.error("Error executing the new code:", error);
   }
@@ -46,7 +63,7 @@ window.onload = async function () {
   }
 
   const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
-    datasetId: 40101,
+    datasetId: 40104,
     viewState: { zoom: 4 },
     scenario: 2,
   });
@@ -65,8 +82,15 @@ window.onload = async function () {
   iframeDoc.close();
 };
 
-function changeScenario(degree) {
+function changeScenario(event, degree) {
   const iframe = document.querySelector("#map-container iframe");
+  
+  document.querySelectorAll(".change-scenario-button").forEach(button => {
+    button.classList.remove("selected-scenario");
+  });
+
+  event.target.classList.add("selected-scenario");
+
   if (iframe) {
     iframe.contentWindow.postMessage(
       { action: "onDegreeChanged", degree },
