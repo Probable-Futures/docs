@@ -6,7 +6,7 @@ const editableCode = `
   async function initializeMap() {
     const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
       datasetId: 40104,
-      viewState: { zoom: 4 },
+      viewState: { zoom: 4, latitude: 3.8, longitude: -70.4},
       scenario: 2,
     });
 
