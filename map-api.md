@@ -11,11 +11,11 @@ This section describes how to integrate the Probable Futures maps into any websi
 
 ## Embeddable maps - downloaded from probablefutures.org
 
-1. On [probablefutures.org/maps](https://probablefutures.org/maps), position the map location and zoom level exactly as you would like it to appear in the embed. 
+1. On [probablefutures.org/maps](https://probablefutures.org/maps), position the map location and zoom level exactly as you would like it to appear in the embed.
 2. Click the download button on the right side. In the pop-up, select between either a standard embeddable map or embeddable comparison map. When you are done choosing your options, click the download button to download the embeddable map as an HTML file.
-3. Add the file to any website. Typically, it's best to do this by placing the contents of the HTML file inside an `<iframe>` element. 
+3. Add the file to any website. Typically, it's best to do this by placing the contents of the HTML file inside an `<iframe>` element.
 
-<!-- display comparison map here: assets/html/Likelihood of year-plus drought comparing 1°C and 3°C.html -->
+<div id="compare-map-container"></div>
 
 ## Embeddable maps API - using React
 
