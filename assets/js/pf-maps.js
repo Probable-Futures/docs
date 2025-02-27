@@ -6,7 +6,7 @@ const editableCode = `
   async function initializeMap() {
     const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
       datasetId: 40104,
-      viewState: { zoom: 4 },
+      viewState: { zoom: 4, latitude: 3.8, longitude: -70.4},
       scenario: 2,
     });
 
@@ -56,15 +56,10 @@ function saveAndRunCode() {
   }
 }
 
-window.onload = async function () {
-  if (typeof ProbableFuturesMapsHTMLGenerator === "undefined") {
-    console.error("ProbableFuturesMapsHTMLGenerator is not loaded. Check the script URL.");
-    return;
-  }
-
+async function generateSimpleMap() { 
   const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
     datasetId: 40104,
-    viewState: { zoom: 4 },
+    viewState: { zoom: 4, latitude: 3.8, longitude: -70.4},
     scenario: 2,
   });
 
@@ -80,6 +75,40 @@ window.onload = async function () {
   iframeDoc.open();
   iframeDoc.write(htmlTemplate);
   iframeDoc.close();
+}
+
+async function generateCompareMap() { 
+  const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
+    datasetId: 40702,
+    viewState: { zoom: 4, latitude: 3.8, longitude: -70.4},
+    compare: {
+      scenarioBefore: 1,
+      scenarioAfter: 3,
+    },
+  });
+
+  // Create an iframe
+  const iframe = document.createElement("iframe");
+  iframe.style.width = "100%";
+  iframe.style.height = "600px";
+  iframe.style.border = "none";
+  document.getElementById("compare-map-container").appendChild(iframe);
+
+  // Write the generated HTML template inside the iframe
+  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+  iframeDoc.open();
+  iframeDoc.write(htmlTemplate);
+  iframeDoc.close();
+}
+
+window.onload = async function () {
+  if (typeof ProbableFuturesMapsHTMLGenerator === "undefined") {
+    console.error("ProbableFuturesMapsHTMLGenerator is not loaded. Check the script URL.");
+    return;
+  }
+
+  generateSimpleMap();
+  generateCompareMap();
 };
 
 function changeScenario(event, degree) {

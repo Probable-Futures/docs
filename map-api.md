@@ -7,19 +7,15 @@ parent: Maps
 
 # Map APIs and embeds
 
-This section is for people who want to integrate the Probable Futures maps into their own websites or applications. It is possible to achieve this in three ways:
+This section describes how to integrate the Probable Futures maps into any website or application. Typically, there are two ways people prefer to do this. If a map will be added to an article, embeddable maps downloaded directly from the Probable Futures website are a simple and efficient option. If the maps will be used in an application, where the maps will change dynamically, one of the two map API packages work best. For more customization options, see the [map customizations page](/map-customization).
 
-1. Use the map APIs (npm packages) to integrate the maps into your own application, for example if you are creating an application where you will display more than one map. 
-2. Download an embeddable map, for example to display a map in an article.
-3. Customize, restyle, and host the maps with your own Mapbox account, for example if you would like to use different colors or bins on the maps.
+## Embeddable maps - downloaded from probablefutures.org
 
-### Use cases
+1. On [probablefutures.org/maps](https://probablefutures.org/maps), position the map location and zoom level exactly as you would like it to appear in the embed.
+2. Click the download button on the right side. In the pop-up, select between either a standard embeddable map or embeddable comparison map. When you are done choosing your options, click the download button to download the embeddable map as an HTML file.
+3. Add the file to any website. Typically, it's best to do this by placing the contents of the HTML file inside an `<iframe>` element.
 
-These maps APIs can be used to:
-
-- Add clear and compelling visual maps of our changing climate to any website, article, story, or app
-- Show any place in the world, at any zoom level
-- Do the above for a single warming scenario or multiple, in comparison or sequentially
+<div id="compare-map-container"></div>
 
 ## Embeddable maps API - using React
 
@@ -42,18 +38,9 @@ This package offers an HTML generator that creates pure HTML versions of the Pro
 
 Learn more about this package and find installation instruction in [the npm registry: @probable-futures/probable-futures-maps-html-generator](https://www.npmjs.com/package/@probable-futures/probable-futures-maps-html-generator).
 
-## Embeddable maps - direct download
+### Demo: Generating a climate map using a map API package
 
-1. Go to [probablefutures.org/maps](https://probablefutures.org/maps).
-2. Navigate the map to a place in the world that you would like to show in the embeddable map.
-3. Click the download button on the top right.
-4. Select "Download as embeddable map" or "Download as embeddable comparison map". If selecting a standard embeddable map, the warming scenario you are viewing will be shown in the embeddable map. If selecting a comparison map, choose the warming scenarios you would like to include in the embeddable map in the next step.
-5. Click the download button to download the embeddable map file.
-6. Add the file to any website, application, or article.
-
-## Demo
-
-### Generating climate map using `@probable-futures/probable-futures-html-generator` package
+The code below uses the `@probable-futures/probable-futures-html-generator` package to generate a map. You can edit the code and click the "Save and Run Code" button to change the map. For example, change the `datasetID` to change the type of map being shown, change the `zoom` to change the zoom of the map, and change the `latitude` or `longitude` to change the center focus of the map. 
 
 <div id="map-code-editor" style="height: 300px; width: 100%; border: 1px solid #ccc;"></div>
 <button class="generate-maps-button" onclick="saveAndRunCode()">Save and Run Code</button>
