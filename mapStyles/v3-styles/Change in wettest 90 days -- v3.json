@@ -11,28 +11,31 @@
     },
     "mapbox:autocomposite": true,
     "mapbox:groups": {
-      "Land & water, land": { "name": "Land & water, land", "collapsed": true },
-      "Climate data": { "name": "Climate Data", "collapsed": false },
-      "Land & water, water": {
-        "name": "Land & water, water",
+      "Terrain, terrain-labels": {
+        "name": "Terrain, terrain-labels",
         "collapsed": true
       },
-      "Terrain, land": { "name": "Terrain, land", "collapsed": true },
+      "Administrative boundaries, admin": {
+        "name": "Administrative boundaries, admin",
+        "collapsed": true
+      },
       "Land & water, built": {
         "name": "Land & water, built",
         "collapsed": true
       },
       "Terrain, surface": { "name": "Terrain, surface", "collapsed": true },
-      "Terrain, terrain-labels": {
-        "name": "Terrain, terrain-labels",
+      "Climate data": { "name": "Climate Data", "collapsed": false },
+      "Land & water, land": {
+        "name": "Land & water, land",
         "collapsed": true
       },
       "Place labels, place-labels": {
         "name": "Place labels, place-labels",
         "collapsed": true
       },
-      "Administrative boundaries, admin": {
-        "name": "Administrative boundaries, admin",
+      "Terrain, land": { "name": "Terrain, land", "collapsed": true },
+      "Land & water, water": {
+        "name": "Land & water, water",
         "collapsed": true
       }
     },
@@ -47,14 +50,6 @@
     "source": "mapbox://mapbox.mapbox-terrain-dem-v1",
     "exaggeration": 1.6
   },
-  "sprite": "mapbox://sprites/probablefutures/ckrdt3o8j13vh17o25rzazft0/ck2u8j60r58fu0sgyxrigm3cu",
-  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
-  "created": "2021-07-21T18:15:45.546Z",
-  "modified": "2021-08-05T15:46:30.215Z",
-  "id": "ckrdt3o8j13vh17o25rzazft0",
-  "owner": "probablefutures",
-  "visibility": "private",
-  "draft": false,
   "sources": {
     "mapbox://mapbox.mapbox-terrain-dem-v1": {
       "url": "mapbox://mapbox.mapbox-terrain-dem-v1",
@@ -66,6 +61,8 @@
       "type": "vector"
     }
   },
+  "sprite": "mapbox://sprites/probablefutures/clhyj2rj6027601pr6h68953d/ck2u8j60r58fu0sgyxrigm3cu",
+  "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "land",
@@ -297,7 +294,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -330,7 +336,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -363,7 +378,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -396,7 +420,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -429,7 +462,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -462,7 +504,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -495,7 +546,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -527,8 +587,17 @@
           51,
           "#003459"
         ],
-        "fill-antialias": false,
-        "fill-opacity": 0.8
+        "fill-opacity": 0.8,
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -561,7 +630,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -594,7 +672,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -627,7 +714,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -660,7 +756,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -693,7 +798,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -726,7 +840,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -759,7 +882,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -791,7 +923,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -824,7 +965,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -857,7 +1007,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -890,7 +1049,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -923,7 +1091,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -956,7 +1133,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -989,7 +1175,16 @@
           "#003459"
         ],
         "fill-opacity": 0.8,
-        "fill-antialias": false
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -1021,8 +1216,17 @@
           51,
           "#003459"
         ],
-        "fill-antialias": false,
-        "fill-opacity": 0.8
+        "fill-opacity": 0.8,
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -1054,8 +1258,17 @@
           51,
           "#003459"
         ],
-        "fill-antialias": false,
-        "fill-opacity": 0.8
+        "fill-opacity": 0.8,
+        "fill-outline-color": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          0,
+          "#ffffff",
+          22,
+          "#ffffff"
+        ],
+        "fill-antialias": ["step", ["zoom"], false, 6, true]
       }
     },
     {
@@ -1383,7 +1596,6 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
         "text-line-height": 1.1,
         "text-size": [
           "interpolate",
@@ -1428,6 +1640,7 @@
         ],
         "icon-image": "",
         "text-font": ["DIN Pro Regular", "Arial Unicode MS Regular"],
+        "visibility": "none",
         "text-offset": [
           "step",
           ["zoom"],
@@ -1489,7 +1702,6 @@
         ]
       ],
       "layout": {
-        "visibility": "none",
         "text-line-height": 1.1,
         "text-size": [
           "interpolate",
@@ -1518,6 +1730,7 @@
         ],
         "icon-image": "",
         "text-font": ["DIN Pro Medium", "Arial Unicode MS Regular"],
+        "visibility": "none",
         "text-offset": [
           "step",
           ["zoom"],
@@ -1807,5 +2020,12 @@
         ]
       }
     }
-  ]
+  ],
+  "created": "2023-05-22T07:30:37.410Z",
+  "modified": "2023-10-03T16:07:51.858Z",
+  "id": "clhyj2rj6027601pr6h68953d",
+  "owner": "probablefutures",
+  "visibility": "private",
+  "protected": true,
+  "draft": false
 }
