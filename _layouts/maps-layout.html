@@ -8,6 +8,7 @@ layout: table_wrappers
 <link rel="stylesheet" href="{{ '../assets/css/pf-maps.css' }}">
 
 {% include head.html %}
+
 <body>
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
@@ -19,32 +20,37 @@ layout: table_wrappers
       <div id="main-content" class="main-content">
         <main>
           {% if site.heading_anchors != false %}
-            {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+          {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16
+            16\" aria-hidden=\"true\">
+            <use xlink:href=\"#svg-link\"></use>
+          </svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
           {% else %}
-            {{ content }}
+          {{ content }}
           {% endif %}
 
           {% if page.has_children == true and page.has_toc != false %}
-            {% include components/children_nav.html %}
+          {% include components/children_nav.html %}
           {% endif %}
         </main>
         {% include components/footer.html %}
       </div>
     </div>
     {% if site.search_enabled != false %}
-      {% include components/search_footer.html %}
+    {% include components/search_footer.html %}
     {% endif %}
   </div>
 
   {% if site.mermaid %}
-    {% include components/mermaid.html %}
+  {% include components/mermaid.html %}
   {% endif %}
 
   <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.7/ace.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@probable-futures/probable-futures-maps-html-generator@latest/dist/probable-futures-maps-html-generator.umd.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@probable-futures/probable-futures-maps-html-generator@2.0.1/dist/probable-futures-maps-html-generator.umd.js"></script>
   <script src="{{ '/assets/js/pf-maps.js' | relative_url }}"></script>
 
 </body>
+
 </html>
