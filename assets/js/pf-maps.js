@@ -2,10 +2,16 @@ const editor = ace.edit("map-code-editor");
 editor.setTheme("ace/theme/monokai");
 editor.session.setMode("ace/mode/javascript");
 
+// Public Probable Futures Mapbox token. As of html-generator v2, `mapboxAccessToken`
+// is a required argument to generateEmbedMap (older versions bundled it internally).
+const MAPBOX_ACCESS_TOKEN =
+  "pk.eyJ1IjoicHJvYmFibGVmdXR1cmVzIiwiYSI6ImNtcm5qbDlxejB5ZWgzM3F1ZTVndDNpOHAifQ.5S-Jg4v0gR-VSOdtm9peiQ";
+
 const editableCode = `
   async function initializeMap() {
     const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
       datasetId: 40104,
+      mapboxAccessToken: "${MAPBOX_ACCESS_TOKEN}",
       viewState: { zoom: 4, latitude: 3.8, longitude: -70.4},
       scenario: 2,
     });
@@ -59,6 +65,7 @@ function saveAndRunCode() {
 async function generateSimpleMap() { 
   const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
     datasetId: 40104,
+    mapboxAccessToken: MAPBOX_ACCESS_TOKEN,
     viewState: { zoom: 4, latitude: 3.8, longitude: -70.4},
     scenario: 2,
   });
@@ -80,6 +87,7 @@ async function generateSimpleMap() {
 async function generateCompareMap() { 
   const htmlTemplate = await ProbableFuturesMapsHTMLGenerator.generateEmbedMap({
     datasetId: 40702,
+    mapboxAccessToken: MAPBOX_ACCESS_TOKEN,
     viewState: { zoom: 4, latitude: 3.8, longitude: -70.4},
     compare: {
       scenarioBefore: 1,
